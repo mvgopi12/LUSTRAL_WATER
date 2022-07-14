@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "subscription",
+    "pageId": "UserOnboarding",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tsubs_submit_function: async () => {\n\t\t//use async-await or promises\n\t\tif(subs_phonenumber_input.text != \"\" && subs_userId_input.text != \"\" && subs_end_input.text != \"\" && subs_plan_input.text != \"\" && subs_start_input.formattedDate != \"\"){\n\t\t\tawait find_subs.run();\n\t\t\tif(find_subs.data.length==0){\n\t\t\t\tawait create_subscription.run();\n\t\t\t\tif(create_subscription.data.length >0){\n\t\t\t\t\tshowModal(\"Subs_Success\");\n\t\t\t\t}else{\n\t\t\t\t\tshowModal(\"Failure_modal\");\n\t\t\t\t}\n\t\t\t}else if(find_subs.data.length >= 1){\n\t\t\t\tshowModal(\"Creation_User_Failure\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Failure_modal\");\n\t\t\t}\n\t\t}else{\n\t\t\tshowModal(\"emptyValues_modal\");\n\t\t}\n\t}\n}\n",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "UserOnboarding_subscription",
+  "deleted": false,
+  "gitSyncId": "60cd8f14165e2a21a2661090_627f411a2c1e3f03d329ada7"
+}

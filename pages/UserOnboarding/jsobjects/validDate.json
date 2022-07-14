@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "validDate",
+    "pageId": "UserOnboarding",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tvaild_till: () => {\n\t\t\tconst start_Date_format = new Date(subs_start_input.formattedDate);\n\t\tlet subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n\t\treturn subs_end_date.toISOString();\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "UserOnboarding_validDate",
+  "deleted": false,
+  "gitSyncId": "60cd8f14165e2a21a2661090_626bb6f8cca31f35e65b768b"
+}

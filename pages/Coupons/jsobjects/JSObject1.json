@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Coupons",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tvalidDateFormat: (valid_date) => {\n\t\t//write code here\n\t\tlet format = valid_date.slice(0,19);\n\t\treturn format;\n\t},\n\tcreateCouponFunction: async () => {\n\t\t//use async-await or promises\n\t\tif(Code_input.text != \"\" && minProductPrice_input.text != \"\" && discount_percentage_input.text != \"\" && price_input.text != \"\" && discount_type_input.text != \"\" && max_discount_input.text != \"\" && valid_from_input.formattedDate != \"\" && valid_till_input.formattedDate != \"\" && active_input.text != \"\" && total_coupons_input.text != \"\" && userFrequency_input.text != \"\"){\n\t\t\tawait AddCoupon.run();\n\t\t\tif(AddCoupon.data[0].affectedRows == 1){\n\t\t\t\tshowModal(\"Creation_coupon_success\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Failure_modal\");\n\t\t\t}\n\t\t}\n\t},\n\tChangeStatus : (active)=>{\n\t\tif(active == 1){\n\t\t\treturn 0;\n\t\t}\n\t\tif(active==0){\n\t\t\treturn 1;\n\t\t}\n\t},\n\tchangeStatusFeedback : async ()=>{\n\t\tawait change_active_coupon.run();\n\t\tif(change_active_coupon.data[0].affectedRows == 0){\n\t\t\tshowModal(\"Failure_modal\");\n\t\t}if(change_active_coupon.data[0].affectedRows == 1){\n\t\t\tshowModal(\"active_success_modal\");\n\t\t\tAttempts_list.run();\n\t\t}\n\t},\n\tEditSearchCoupon :async ()=>{\n\tif(editCoupon_input != \"\"){\n\t\tEditFindCoupon.run();\n\t\tText35.text = \"hello\";\n\t}\n}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Coupons_JSObject1",
+  "deleted": false,
+  "gitSyncId": "60cd8f14165e2a21a2661090_627511f85984be5f5784c570"
+}

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "DeviceMap",
+    "pageId": "UserOnboarding",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: async () => {\n\t\t//write code here\n\t\tif(findMacId.data.length == 0){\n\t\t\tshowModal('devNotFound_modal');\n\t\t}\n\t},\n\tmyFun2: () => {\n\t\tif(updateMacId.data[0].affectedRows == 0){\n\t\t\tshowModal('devNotFound_modal');\n\t\t\treturn 0;\n\t\t}\n\t\telse if(updateMacId.data[0].affectedRows == 1)\n\t\t{\n\t\t\tshowModal('Success_modal');\n\t\t\treturn 1;\n\t\t}\n\t},\n\tupdateDevice: async ()=>{\n\t\tif(mac_Id_Input.text != \"\" && user_id_input.text != \"\"){\n\t\t\tawait updateMacId.run();\n\t\t\tDeviceMap.myFun2();\n\t\t}\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "UserOnboarding_DeviceMap",
+  "deleted": false,
+  "gitSyncId": "60cd8f14165e2a21a2661090_627cb7a00b47255c2813c839"
+}
