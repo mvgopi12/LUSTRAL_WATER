@@ -90,7 +90,7 @@
                   "key": "accentColor"
                 }
               ],
-              "leftColumn": 3,
+              "leftColumn": 1,
               "primaryColumns": {
                 "deviceidentifier": {
                   "index": 5,
@@ -268,7 +268,7 @@
               "key": "xiymvr9aa0",
               "derivedColumns": {},
               "labelTextSize": "0.875rem",
-              "rightColumn": 63,
+              "rightColumn": 61,
               "textSize": "0.875rem",
               "widgetId": "g4q9asz2ji",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",

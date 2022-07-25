@@ -35,10 +35,6 @@
     {
       "id": "Inactive Devices",
       "isDefault": false
-    },
-    {
-      "id": "Customer_care_leads",
-      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async ()=>{\n\tif(editCoupon_input != \"\"){\n\t\tEditFindCoupon.run();\n\t\tText35.text = \"hello\";\n\t}\n}",
+      "body": "async () => {\n  if (editCoupon_input != \"\") {\n    EditFindCoupon.run();\n    Text35.text = \"hello\";\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async ()=>{\n\tif(editCoupon_input != \"\"){\n\t\tEditFindCoupon.run();\n\t\tText35.text = \"hello\";\n\t}\n}"
+      "async () => {\n  if (editCoupon_input != \"\") {\n    EditFindCoupon.run();\n    Text35.text = \"hello\";\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

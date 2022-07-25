@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//use async-await or promises\n\t\tif(Code_input.text != \"\" && minProductPrice_input.text != \"\" && discount_percentage_input.text != \"\" && price_input.text != \"\" && discount_type_input.text != \"\" && max_discount_input.text != \"\" && valid_from_input.formattedDate != \"\" && valid_till_input.formattedDate != \"\" && active_input.text != \"\" && total_coupons_input.text != \"\" && userFrequency_input.text != \"\"){\n\t\t\tawait AddCoupon.run();\n\t\t\tif(AddCoupon.data[0].affectedRows == 1){\n\t\t\t\tshowModal(\"Creation_coupon_success\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Failure_modal\");\n\t\t\t}\n\t\t}\n\t}",
+      "body": "async () => {\n  if (Code_input.text != \"\" && minProductPrice_input.text != \"\" && discount_percentage_input.text != \"\" && price_input.text != \"\" && discount_type_input.text != \"\" && max_discount_input.text != \"\" && valid_from_input.formattedDate != \"\" && valid_till_input.formattedDate != \"\" && active_input.text != \"\" && total_coupons_input.text != \"\" && userFrequency_input.text != \"\") {\n    await AddCoupon.run();\n    if (AddCoupon.data[0].affectedRows == 1) {\n      showModal(\"Creation_coupon_success\");\n    } else {\n      showModal(\"Failure_modal\");\n    }\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//use async-await or promises\n\t\tif(Code_input.text != \"\" && minProductPrice_input.text != \"\" && discount_percentage_input.text != \"\" && price_input.text != \"\" && discount_type_input.text != \"\" && max_discount_input.text != \"\" && valid_from_input.formattedDate != \"\" && valid_till_input.formattedDate != \"\" && active_input.text != \"\" && total_coupons_input.text != \"\" && userFrequency_input.text != \"\"){\n\t\t\tawait AddCoupon.run();\n\t\t\tif(AddCoupon.data[0].affectedRows == 1){\n\t\t\t\tshowModal(\"Creation_coupon_success\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Failure_modal\");\n\t\t\t}\n\t\t}\n\t}"
+      "async () => {\n  if (Code_input.text != \"\" && minProductPrice_input.text != \"\" && discount_percentage_input.text != \"\" && price_input.text != \"\" && discount_type_input.text != \"\" && max_discount_input.text != \"\" && valid_from_input.formattedDate != \"\" && valid_till_input.formattedDate != \"\" && active_input.text != \"\" && total_coupons_input.text != \"\" && userFrequency_input.text != \"\") {\n    await AddCoupon.run();\n    if (AddCoupon.data[0].affectedRows == 1) {\n      showModal(\"Creation_coupon_success\");\n    } else {\n      showModal(\"Failure_modal\");\n    }\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

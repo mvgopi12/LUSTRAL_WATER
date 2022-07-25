@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async ()=>{\n\t\tawait change_active_coupon.run();\n\t\tif(change_active_coupon.data[0].affectedRows == 0){\n\t\t\tshowModal(\"Failure_modal\");\n\t\t}if(change_active_coupon.data[0].affectedRows == 1){\n\t\t\tshowModal(\"active_success_modal\");\n\t\t\tAttempts_list.run();\n\t\t}\n\t}",
+      "body": "async () => {\n  await change_active_coupon.run();\n  if (change_active_coupon.data[0].affectedRows == 0) {\n    showModal(\"Failure_modal\");\n  }\n  if (change_active_coupon.data[0].affectedRows == 1) {\n    showModal(\"active_success_modal\");\n    Attempts_list.run();\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async ()=>{\n\t\tawait change_active_coupon.run();\n\t\tif(change_active_coupon.data[0].affectedRows == 0){\n\t\t\tshowModal(\"Failure_modal\");\n\t\t}if(change_active_coupon.data[0].affectedRows == 1){\n\t\t\tshowModal(\"active_success_modal\");\n\t\t\tAttempts_list.run();\n\t\t}\n\t}"
+      "async () => {\n  await change_active_coupon.run();\n  if (change_active_coupon.data[0].affectedRows == 0) {\n    showModal(\"Failure_modal\");\n  }\n  if (change_active_coupon.data[0].affectedRows == 1) {\n    showModal(\"active_success_modal\");\n    Attempts_list.run();\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

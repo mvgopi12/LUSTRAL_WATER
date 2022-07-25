@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 40000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT deviceidentifier, MAX(createdAt) AS latestUpdate\nfrom metrics \nGROUP BY deviceidentifier\nHAVING MAX(createdAt) <= DATE_SUB(NOW(),INTERVAL 3 DAY)\nORDER BY latestUpdate DESC;\n\n",
+      "body": "SELECT deviceidentifier, MAX(createdAt) AS latestUpdate\nfrom metrics \nGROUP BY deviceidentifier\nHAVING MAX(createdAt) >= DATE_SUB(NOW(),INTERVAL 1 DAY)\nORDER BY latestUpdate DESC;\n\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true

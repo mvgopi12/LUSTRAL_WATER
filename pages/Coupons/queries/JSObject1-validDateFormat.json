@@ -20,11 +20,9 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(valid_date) => {\n\t\t//write code here\n\t\tlet format = valid_date.slice(0,19);\n\t\treturn format;\n\t}",
+      "body": "valid_date => {\n  let format = valid_date.slice(0, 19);\n  return format;\n}",
       "jsArguments": [
-        {
-          "name": "valid_date"
-        }
+        {}
       ],
       "isAsync": false
     },
@@ -39,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(valid_date) => {\n\t\t//write code here\n\t\tlet format = valid_date.slice(0,19);\n\t\treturn format;\n\t}"
+      "valid_date => {\n  let format = valid_date.slice(0, 19);\n  return format;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
