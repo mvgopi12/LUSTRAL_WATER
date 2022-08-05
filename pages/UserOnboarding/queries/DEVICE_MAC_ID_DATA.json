@@ -106,6 +106,9 @@
             "limit": "1000"
           }
         },
+        "projection": {
+          "data": []
+        },
         "queryFormat": {
           "data": "ROWS",
           "viewType": "component",
@@ -130,6 +133,14 @@
           "data": true,
           "viewType": "component",
           "componentData": true
+        },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
         },
         "tableHeaderIndex": {
           "data": "1",
@@ -162,11 +173,7 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.where.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],

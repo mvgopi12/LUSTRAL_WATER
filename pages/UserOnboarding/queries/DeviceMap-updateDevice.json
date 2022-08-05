@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async ()=>{\n\t\tif(mac_Id_Input.text != \"\" && user_id_input.text != \"\"){\n\t\t\tawait updateMacId.run();\n\t\t\tDeviceMap.myFun2();\n\t\t}\n\t}",
+      "body": "async () => {\n  if (mac_Id_Input.text != \"\" && user_id_input.text != \"\") {\n    await updateMacId.run();\n    DeviceMap.myFun2();\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async ()=>{\n\t\tif(mac_Id_Input.text != \"\" && user_id_input.text != \"\"){\n\t\t\tawait updateMacId.run();\n\t\t\tDeviceMap.myFun2();\n\t\t}\n\t}"
+      "async () => {\n  if (mac_Id_Input.text != \"\" && user_id_input.text != \"\") {\n    await updateMacId.run();\n    DeviceMap.myFun2();\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

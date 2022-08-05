@@ -10,11 +10,11 @@
     "variables": [
       {
         "name": "myVar1",
-        "value": []
+        "value": "[]"
       },
       {
         "name": "myVar2",
-        "value": {}
+        "value": "{}"
       }
     ]
   },

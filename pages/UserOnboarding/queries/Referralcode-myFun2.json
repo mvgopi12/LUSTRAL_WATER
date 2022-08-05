@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//use async-await or promises\n\t\twhile(true){\n\t\t\tvar code = Referralcode.generatecode();\n\t\t\tawait uniqueCode.run(code);\n\t\t\tif(uniqueCode.data.length == 0){\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\treturn code;\n\t}",
+      "body": "async () => {\n  while (true) {\n    var code = Referralcode.generatecode();\n    await uniqueCode.run(code);\n    if (uniqueCode.data.length == 0) {\n      break;\n    }\n  }\n  return code;\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//use async-await or promises\n\t\twhile(true){\n\t\t\tvar code = Referralcode.generatecode();\n\t\t\tawait uniqueCode.run(code);\n\t\t\tif(uniqueCode.data.length == 0){\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\treturn code;\n\t}"
+      "async () => {\n  while (true) {\n    var code = Referralcode.generatecode();\n    await uniqueCode.run(code);\n    if (uniqueCode.data.length == 0) {\n      break;\n    }\n  }\n  return code;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
