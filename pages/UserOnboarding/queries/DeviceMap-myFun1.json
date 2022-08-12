@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//write code here\n\t\tif(findMacId.data.length == 0){\n\t\t\tshowModal('devNotFound_modal');\n\t\t}\n\t}",
+      "body": "async () => {\n  if (findMacId.data.length == 0) {\n    showModal('devNotFound_modal');\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//write code here\n\t\tif(findMacId.data.length == 0){\n\t\t\tshowModal('devNotFound_modal');\n\t\t}\n\t}"
+      "async () => {\n  if (findMacId.data.length == 0) {\n    showModal('devNotFound_modal');\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

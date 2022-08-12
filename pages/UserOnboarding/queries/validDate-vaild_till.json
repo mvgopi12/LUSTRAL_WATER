@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\tconst start_Date_format = new Date(subs_start_input.formattedDate);\n\t\tlet subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n\t\treturn subs_end_date.toISOString();\n\t}",
+      "body": "() => {\n  const start_Date_format = new Date(subs_start_input.formattedDate);\n  let subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n  return subs_end_date.toISOString();\n}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\tconst start_Date_format = new Date(subs_start_input.formattedDate);\n\t\tlet subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n\t\treturn subs_end_date.toISOString();\n\t}"
+      "() => {\n  const start_Date_format = new Date(subs_start_input.formattedDate);\n  let subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n  return subs_end_date.toISOString();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

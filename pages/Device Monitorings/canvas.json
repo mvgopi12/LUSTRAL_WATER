@@ -316,7 +316,11 @@
                 "oldtds",
                 "oldph",
                 "oldturbidity",
-                "oldtemperature"
+                "oldtemperature",
+                "computedvolume",
+                "absolutevolume",
+                "pld",
+                "version"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -372,6 +376,18 @@
                 },
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "primaryColumns.computedvolume.computedValue"
+                },
+                {
+                  "key": "primaryColumns.absolutevolume.computedValue"
+                },
+                {
+                  "key": "primaryColumns.pld.computedValue"
+                },
+                {
+                  "key": "primaryColumns.version.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -613,6 +629,82 @@
                   "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.oldtemperature))}}",
                   "borderRadius": "0px",
                   "boxShadow": "none"
+                },
+                "computedvolume": {
+                  "index": 13,
+                  "width": 150,
+                  "id": "computedvolume",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "computedvolume",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.computedvolume))}}",
+                  "cellBackground": ""
+                },
+                "absolutevolume": {
+                  "index": 14,
+                  "width": 150,
+                  "id": "absolutevolume",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "absolutevolume",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.absolutevolume))}}",
+                  "cellBackground": ""
+                },
+                "pld": {
+                  "index": 15,
+                  "width": 150,
+                  "id": "pld",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "pld",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.pld))}}",
+                  "cellBackground": ""
+                },
+                "version": {
+                  "index": 16,
+                  "width": 150,
+                  "id": "version",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "version",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.version))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",

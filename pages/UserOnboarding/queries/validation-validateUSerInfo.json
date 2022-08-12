@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//write code here\n\t\tif(createUser_phonenumber.text != \"\" && createUser_Name.text != \"\" && createUser_Address.text != \"\" && installation_date.formattedDate != \"\"){\n\t\t\tawait find_user.run();\n\t\t\tif(!find_user.data.length){\n\t\t\t\tawait create_new_user.run();\n\t\t\t\tif(create_new_user.data.length){\n\t\t\t\t\tawait find_user.run();\n\t\t\t\t\tshowModal(\"userCreationSuccess_modal\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Creation_User_Failure\");\n\t\t\t}\n\t\t\t}else{\n\t\t\t\tshowModal(\"Creation_User_Failure\");\n\t\t\t}\n\t\t}else{\n\t\t\tshowModal(\"emptyValues_modal\");\n\t\t}\n\t}",
+      "body": "async () => {\n  if (createUser_phonenumber.text != \"\" && createUser_Name.text != \"\" && createUser_Address.text != \"\" && installation_date.formattedDate != \"\") {\n    await find_user.run();\n    if (!find_user.data.length) {\n      await create_new_user.run();\n      if (create_new_user.data.length) {\n        await find_user.run();\n        showModal(\"userCreationSuccess_modal\");\n      } else {\n        showModal(\"Creation_User_Failure\");\n      }\n    } else {\n      showModal(\"Creation_User_Failure\");\n    }\n  } else {\n    showModal(\"emptyValues_modal\");\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//write code here\n\t\tif(createUser_phonenumber.text != \"\" && createUser_Name.text != \"\" && createUser_Address.text != \"\" && installation_date.formattedDate != \"\"){\n\t\t\tawait find_user.run();\n\t\t\tif(!find_user.data.length){\n\t\t\t\tawait create_new_user.run();\n\t\t\t\tif(create_new_user.data.length){\n\t\t\t\t\tawait find_user.run();\n\t\t\t\t\tshowModal(\"userCreationSuccess_modal\");\n\t\t\t}else{\n\t\t\t\tshowModal(\"Creation_User_Failure\");\n\t\t\t}\n\t\t\t}else{\n\t\t\t\tshowModal(\"Creation_User_Failure\");\n\t\t\t}\n\t\t}else{\n\t\t\tshowModal(\"emptyValues_modal\");\n\t\t}\n\t}"
+      "async () => {\n  if (createUser_phonenumber.text != \"\" && createUser_Name.text != \"\" && createUser_Address.text != \"\" && installation_date.formattedDate != \"\") {\n    await find_user.run();\n    if (!find_user.data.length) {\n      await create_new_user.run();\n      if (create_new_user.data.length) {\n        await find_user.run();\n        showModal(\"userCreationSuccess_modal\");\n      } else {\n        showModal(\"Creation_User_Failure\");\n      }\n    } else {\n      showModal(\"Creation_User_Failure\");\n    }\n  } else {\n    showModal(\"emptyValues_modal\");\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
