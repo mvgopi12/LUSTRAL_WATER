@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 60,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -48,9 +48,16 @@
                 }
               },
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.ocnf9mgtz7.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "leftColumn": 27,
@@ -83,6 +90,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 51,
               "widgetId": "n19qcr84fr",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -114,10 +122,17 @@
               },
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.erxa6imynl.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "customFusionChartConfig": {
@@ -149,6 +164,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 25,
               "widgetId": "q8e6bc36pk",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -183,9 +199,16 @@
                 }
               },
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.ocnf9mgtz7.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "leftColumn": 27,
@@ -218,6 +241,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 51,
               "widgetId": "u79z5f9tcx",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -252,9 +276,16 @@
                 }
               },
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.ocnf9mgtz7.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "leftColumn": 1,
@@ -287,6 +318,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 25,
               "widgetId": "j0is5d2szi",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -775,9 +807,16 @@
                 }
               },
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.ocnf9mgtz7.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "leftColumn": 1,
@@ -810,6 +849,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 25,
               "widgetId": "snexumlz5l",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
@@ -841,10 +881,17 @@
               },
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "leftColumn": 27,
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.erxa6imynl.data"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
                 }
               ],
               "customFusionChartConfig": {
@@ -876,6 +923,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 51,
               "widgetId": "uzkhrdazt0",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "version": 1,
               "parentId": "0",
