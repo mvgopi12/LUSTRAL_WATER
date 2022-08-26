@@ -4279,19 +4279,6 @@
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "User Dashboard_device_update",
-              "name": "device_update",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "device.selectedRow.id",
-                "macid.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "validOnPageLoadActions": true,
