@@ -644,6 +644,11 @@
               "boxShadow": "none",
               "widgetName": "succes_modal",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e.svg",
               "topRow": 0,
@@ -4036,6 +4041,7 @@
               "boxShadow": "none",
               "widgetName": "remapping_success",
               "isCanvas": true,
+              "dynamicPropertyPathList": [],
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
               "searchTags": [
@@ -4051,6 +4057,11 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 8.238525390625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "leftColumn": 18,
               "dynamicBindingPathList": [
                 {
@@ -4238,6 +4249,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "onClose": "{{device_list.run(() => closeModal('remapping_success'), () => closeModal('remapping_success'))}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 456
             }
