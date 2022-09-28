@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 63,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -3548,7 +3548,11 @@
                               "widgetName": "Button13CopyCopy1",
                               "onClick": "{{resetWidget(\"mapping\",true)}}",
                               "buttonColor": "#03B365",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca02633.svg",
                               "topRow": 22,
@@ -3705,9 +3709,6 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.Column_1.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.IMEI_NUMBER.computedValue"
                         },
                         {
@@ -3726,19 +3727,34 @@
                           "key": "primaryColumns.Device_Number.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Column_8.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.confirmation.computedValue"
                         },
                         {
                           "key": "primaryColumns.Column_10.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Column_11.computedValue"
+                          "key": "primaryColumns.rowIndex.computedValue"
                         },
                         {
-                          "key": "primaryColumns.rowIndex.computedValue"
+                          "key": "primaryColumns.S_NO.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.NIC_Card_Number.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.FLOAT_SENSOR.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Column_12.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Column_13.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Column_14.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Column_15.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -3781,18 +3797,22 @@
                       "widgetName": "Table4",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "Column_1",
                         "IMEI_NUMBER",
                         "SIM_NO",
                         "ESP32_mac_id",
                         "PLD",
                         "VERSION_DETAIL",
                         "Device_Number",
-                        "Column_8",
                         "confirmation",
                         "Column_10",
-                        "Column_11",
-                        "rowIndex"
+                        "rowIndex",
+                        "S_NO",
+                        "NIC_Card_Number",
+                        "FLOAT_SENSOR",
+                        "Column_12",
+                        "Column_13",
+                        "Column_14",
+                        "Column_15"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -3813,30 +3833,6 @@
                       "parentColumnSpace": 8.806640625,
                       "dynamicTriggerPathList": [],
                       "primaryColumns": {
-                        "Column_1": {
-                          "allowCellWrapping": false,
-                          "index": 0,
-                          "width": 150,
-                          "originalId": "Column-1",
-                          "id": "Column_1",
-                          "alias": "Column-1",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Column-1",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-1\"]))}}"
-                        },
                         "IMEI_NUMBER": {
                           "allowCellWrapping": false,
                           "index": 1,
@@ -3859,7 +3855,8 @@
                           "label": "IMEI_NUMBER",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IMEI_NUMBER\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"IMEI_NUMBER\"]))}}",
+                          "validation": {}
                         },
                         "SIM_NO": {
                           "allowCellWrapping": false,
@@ -3883,7 +3880,8 @@
                           "label": "SIM_NO",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SIM_NO\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SIM_NO\"]))}}",
+                          "validation": {}
                         },
                         "ESP32_mac_id": {
                           "allowCellWrapping": false,
@@ -3907,7 +3905,8 @@
                           "label": "ESP32_mac_id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ESP32_mac_id\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ESP32_mac_id\"]))}}",
+                          "validation": {}
                         },
                         "PLD": {
                           "allowCellWrapping": false,
@@ -3931,7 +3930,8 @@
                           "label": "PLD",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PLD\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PLD\"]))}}",
+                          "validation": {}
                         },
                         "VERSION_DETAIL": {
                           "allowCellWrapping": false,
@@ -3946,7 +3946,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -3955,7 +3955,8 @@
                           "label": "VERSION DETAIL",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VERSION DETAIL\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VERSION DETAIL\"]))}}",
+                          "validation": {}
                         },
                         "Device_Number": {
                           "allowCellWrapping": false,
@@ -3979,31 +3980,8 @@
                           "label": "Device Number",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Device Number\"]))}}"
-                        },
-                        "Column_8": {
-                          "allowCellWrapping": false,
-                          "index": 7,
-                          "width": 150,
-                          "originalId": "Column-8",
-                          "id": "Column_8",
-                          "alias": "Column-8",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": false,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Column-8",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-8\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Device Number\"]))}}",
+                          "validation": {}
                         },
                         "confirmation": {
                           "allowCellWrapping": false,
@@ -4027,7 +4005,8 @@
                           "label": "confirmation",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"confirmation\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"confirmation\"]))}}",
+                          "validation": {}
                         },
                         "Column_10": {
                           "allowCellWrapping": false,
@@ -4051,31 +4030,8 @@
                           "label": "Column-10",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-10\"]))}}"
-                        },
-                        "Column_11": {
-                          "allowCellWrapping": false,
-                          "index": 10,
-                          "width": 150,
-                          "originalId": "Column-11",
-                          "id": "Column_11",
-                          "alias": "Column-11",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": false,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Column-11",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-11\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-10\"]))}}",
+                          "validation": {}
                         },
                         "rowIndex": {
                           "allowCellWrapping": false,
@@ -4099,7 +4055,197 @@
                           "label": "rowIndex",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}"
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
+                          "validation": {}
+                        },
+                        "S_NO": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "S.NO",
+                          "id": "S_NO",
+                          "alias": "S.NO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "S.NO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"S.NO\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "NIC_Card_Number": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "NIC Card Number",
+                          "id": "NIC_Card_Number",
+                          "alias": "NIC Card Number",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "NIC Card Number",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NIC Card Number\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "FLOAT_SENSOR": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "FLOAT SENSOR",
+                          "id": "FLOAT_SENSOR",
+                          "alias": "FLOAT SENSOR",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "FLOAT SENSOR",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FLOAT SENSOR\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "Column_12": {
+                          "allowCellWrapping": false,
+                          "index": 11,
+                          "width": 150,
+                          "originalId": "Column-12",
+                          "id": "Column_12",
+                          "alias": "Column-12",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Column-12",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-12\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "Column_13": {
+                          "allowCellWrapping": false,
+                          "index": 12,
+                          "width": 150,
+                          "originalId": "Column-13",
+                          "id": "Column_13",
+                          "alias": "Column-13",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Column-13",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-13\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "Column_14": {
+                          "allowCellWrapping": false,
+                          "index": 13,
+                          "width": 150,
+                          "originalId": "Column-14",
+                          "id": "Column_14",
+                          "alias": "Column-14",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Column-14",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-14\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
+                        },
+                        "Column_15": {
+                          "allowCellWrapping": false,
+                          "index": 14,
+                          "width": 150,
+                          "originalId": "Column-15",
+                          "id": "Column_15",
+                          "alias": "Column-15",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Column-15",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Column-15\"]))}}",
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "key": "jr6j79tckl",
@@ -5534,6 +5680,7 @@
                       "widgetName": "Button31",
                       "onClick": "{{closeModal('userMappingSuccess_modal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [

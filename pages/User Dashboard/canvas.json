@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 63,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -2658,7 +2658,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy",
+                              "widgetName": "remap_macid",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
                               "topRow": 1,
@@ -3759,6 +3759,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -3778,7 +3781,7 @@
                       "isLoading": false,
                       "borderRadius": "0px",
                       "iconAlign": "left",
-                      "defaultText": ""
+                      "defaultText": "{{remap_macid.text}}"
                     },
                     {
                       "widgetName": "Text22Copy",
@@ -3999,9 +4002,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button17",
-                      "onClick": "{{device_update.run(() => showModal('remapping_success'), () => showModal('Failure_modal'))}}",
+                      "onClick": "{{device_update.run(() => showModal('remapping_success'),\n() => showModal('Failure_modal'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [

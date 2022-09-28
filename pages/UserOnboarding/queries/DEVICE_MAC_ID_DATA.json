@@ -98,7 +98,7 @@
         "pagination": {
           "data": {
             "offset": "0",
-            "limit": "1000"
+            "limit": "10000000"
           },
           "viewType": "component",
           "componentData": {
@@ -113,6 +113,9 @@
           "data": "ROWS",
           "viewType": "component",
           "componentData": "ROWS"
+        },
+        "range": {
+          "data": ""
         },
         "rowIndex": {
           "data": "0",
