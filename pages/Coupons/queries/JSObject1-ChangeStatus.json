@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "active => {\n  if (active == 1) {\n    return 0;\n  }\n  if (active == 0) {\n    return 1;\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
       ],

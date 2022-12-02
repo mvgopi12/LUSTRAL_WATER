@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  if (subs_phonenumber_input.text != \"\" && subs_userId_input.text != \"\" && subs_end_input.text != \"\" && subs_plan_input.text != \"\" && subs_start_input.formattedDate != \"\") {\n    await find_subs.run();\n    if (find_subs.data.length == 0) {\n      await create_subscription.run();\n      if (create_subscription.data.length > 0) {\n        showModal(\"Subs_Success\");\n      } else {\n        showModal(\"Failure_modal\");\n      }\n    } else if (find_subs.data.length >= 1) {\n      showModal(\"Creation_User_Failure\");\n    } else {\n      showModal(\"Failure_modal\");\n    }\n  } else {\n    showModal(\"emptyValues_modal\");\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

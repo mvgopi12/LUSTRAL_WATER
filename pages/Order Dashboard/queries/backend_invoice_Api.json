@@ -33,6 +33,7 @@
       "queryParameters": [],
       "body": "{\n    \"name\" : {{Name.text}},\n    \"contact\" : {{phone_paylink.text}},\n    \"email\"  : \"{{email.text}}\",\n    \"billing_address\" : {\n        \"line1\" : {{billingAdd.text}},\n        \"city\"  : {{billingCity.text}},\n        \"zipcode\" : {{billingPincode.text}},\n        \"state\" : {{billingState.text}},\n        \"country\" : \"india\"\n    },\n    \"shipping_address\" : {\n        \"line1\" : {{shippingAdd.text}},\n        \"city\"  : {{shippingCity.text}},\n        \"zipcode\" : {{shippingPincode.text}},\n        \"state\" : {{shippingState.text}},\n        \"country\" : \"india\"\n    },\n    \"item_id\" : \"item_IqHb1gDPFqdxqq\"\n}",
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "select users_table.id,users_table.phonenumber,device_table.macid from users_table,device_table\nwhere users_table.id = device_table.user",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

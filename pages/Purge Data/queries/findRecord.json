@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT * FROM metrics \nwhere deviceidentifier = {{oldmacId_input.text}} \nLIMIT 1;\n",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

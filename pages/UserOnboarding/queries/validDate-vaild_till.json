@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  const start_Date_format = new Date(subs_start_input.formattedDate);\n  let subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n  return subs_end_date.toISOString();\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

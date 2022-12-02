@@ -18,6 +18,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "insert into invoice_table \n(invoice_Id,order_Id,entity,name,email,contact,customer_Id,billing_Add_Id,shipping_Add_Id,item_Id,invoice_created_at,short_Url,installation_date,phone_Number_App,createdAt,updatedAt)\nvalues\n({{invoiceApi.data.id}},{{invoiceApi.data.order_id}},{{invoiceApi.data.entity}},{{invoiceApi.data.customer_details.name}},{{invoiceApi.data.customer_details.email}},{{invoiceApi.data.customer_details.contact}},{{invoiceApi.data.customer_details.id}},{{invoiceApi.data.customer_details.billing_address.id}},{{invoiceApi.data.customer_details.shipping_address.id}},{{invoiceApi.data.line_items}},{{invoiceApi.data.created_at}},{{invoiceApi.data.short_url}},{{invoiceApi.data.notes.installation_date}},{{invoiceApi.data.notes.phoneNumberApp}},NOW(),NOW());",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

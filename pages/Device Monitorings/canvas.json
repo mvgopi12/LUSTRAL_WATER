@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 63,
+          "version": 69,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -959,6 +959,7 @@
               "labelTextSize": "0.875rem",
               "rightColumn": 15,
               "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
               "widgetId": "5eq9zs4slk",
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -968,7 +969,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "0px",
-              "fontSize": "0.875rem"
+              "maxDynamicHeight": 9000,
+              "fontSize": "0.875rem",
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "none",
@@ -1064,6 +1067,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Device Monitorings",
         "deleted": false,

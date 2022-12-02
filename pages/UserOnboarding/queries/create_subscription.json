@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO subscription_table\n  (phonenumber,validfrom, validtill, plandetails,userid,createdAt,updatedAt)\nVALUES\n  (\n    {{ subs_phonenumber_input.text }},\n   {{subs_start_input.formattedDate}},\n    {{subs_end_input.text}},\n\t\t{{subs_plan_input.text}},\n\t\t{{subs_userId_input.text}},\n\t\tNOW(),\n\tNOW()\n  );",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "INSERT INTO device_table\n  (macid,devicestatus,wifi,wifipass,lastsync,connectionstatus,user,createdAt,updatedAt)\nVALUES\n  ({{macid.text}},\n\t 1,\n\t \"randomwifi\",\n\t \"wifipassword\",\n\t NOW(),\n\t \"ACTIVE\",\n    {{id.text}},\n\t NOW(),\n\tNOW()\n  );",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

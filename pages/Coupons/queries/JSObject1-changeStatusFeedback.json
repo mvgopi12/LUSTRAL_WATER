@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  await change_active_coupon.run();\n  if (change_active_coupon.data[0].affectedRows == 0) {\n    showModal(\"Failure_modal\");\n  }\n  if (change_active_coupon.data[0].affectedRows == 1) {\n    showModal(\"active_success_modal\");\n    Attempts_list.run();\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "select coupons_table.code,coupons_table.active,coupons_table.totalFrequency, COUNT(coupons_usage.couponId) as couponAttemptsMade from \ncoupons_table\nleft join coupons_usage on coupons_usage.couponId = coupons_table.id\nGROUP BY coupons_table.code;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

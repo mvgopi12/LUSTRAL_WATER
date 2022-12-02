@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT `id`, `ph`, AVG(`turbidity`) AS `turbidity`, AVG(`temperature`) AS `temperature`, AVG(`tds`) AS `tds`, MAX(`waterconsumption`) AS `waterconsumption`, `createdAt`, `updatedAt` FROM `metrics` AS `metrics` WHERE `metrics`.`createdat` >= DATE_SUB(NOW(),INTERVAL 7 DAY) AND `metrics`.`deviceidentifier` = {{Input4.text}} GROUP BY day(`createdAt`);",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

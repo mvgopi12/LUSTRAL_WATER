@@ -37,6 +37,7 @@
       "queryParameters": [],
       "body": "{\n    \"type\" : \"invoice\",\n    \"description\"  : \"LustralWater purifier\",\n    \"partial_payment\" : true,\n    \"customer\" : {\n        \"name\" : {{Name.text}},\n        \"email\" : {{email.text}},\n        \"contact\" : {{phone_paylink.text}},\n        \"billing_address\" : {\n            \"line1\" : {{billingAdd.text}},\n            \"zipcode\" : {{billingPincode.text}},\n            \"city\" : {{billingCity.text}},\n            \"state\" : {{billing_state_drop_input.selectedOptionValue}},\n            \"country\" : \"india\",\n\t\t\"contact\" : {{phContact.text}}\n        },\n        \"shipping_address\" : {\n            \"line1\" : {{shippingAdd.text}},\n            \"zipcode\" : {{shippingPincode.text}},\n            \"city\" : {{shippingCity.text}},\n            \"state\" : {{shipping_state_drop_input.selectedOptionValue}},\n            \"country\" : \"india\",\n \"contact\" : {{phContact.text}}\n        }\n    },\n    \"line_items\" : [\n        {\n            \"name\" : \"lustral water filter\",\n            \"description\" : \"model Rs.7700\",\n            \"amount\" : 770000,\n            \"currency\" : \"INR\",\n            \"quantity\" : 1\n        }\n    ],\n\t\t\"notes\" : {\n\t\t\"installation_date\" : {{installationDate.selectedDate}},\n\t\t\t\"phoneNumberApp\" : {{phNumApp.text}}\n\t\t},\n\"description\" : {{description_input.text}}\n}",
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
