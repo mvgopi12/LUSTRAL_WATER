@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  if (updateMacId.data[0].affectedRows == 0) {\n    showModal('devNotFound_modal');\n    return 0;\n  } else if (updateMacId.data[0].affectedRows == 1) {\n    showModal('Success_modal');\n    return 1;\n  }\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
     },

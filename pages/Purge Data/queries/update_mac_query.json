@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE metrics\n  SET deviceidentifier = {{newMacid_input.text}}\n  WHERE deviceidentifier = {{oldmacId_input.text}}\n\tlimit {{searchMac_query.data[0].recordsFound}}",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

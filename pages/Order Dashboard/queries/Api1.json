@@ -36,6 +36,7 @@
       "encodeParamsToggle": true,
       "queryParameters": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

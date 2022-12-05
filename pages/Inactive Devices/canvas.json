@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 69,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -54,6 +54,7 @@
               "key": "p7it17l8c9",
               "rightColumn": 48,
               "textAlign": "CENTER",
+              "dynamicHeight": "FIXED",
               "widgetId": "6j65uc226k",
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -63,7 +64,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "fontSize": "1.875rem"
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -556,6 +559,7 @@
               "key": "zyu7b8r7g3",
               "rightColumn": 22,
               "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
               "widgetId": "ovy8f1h2ru",
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -565,7 +569,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "fontSize": "1.25rem"
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
             },
             {
               "widgetName": "Text3",
@@ -596,6 +602,7 @@
               "key": "zyu7b8r7g3",
               "rightColumn": 24,
               "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
               "widgetId": "upaowdeucu",
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -605,7 +612,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "fontSize": "1.25rem"
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -621,6 +630,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Inactive Devices",
         "deleted": false,

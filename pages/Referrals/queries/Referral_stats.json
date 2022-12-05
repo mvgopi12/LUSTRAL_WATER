@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "select users_table.name as Name,referrals_table.referredby_id as User_Id,count(referrals_table.userid) as total_referrals \nfrom users_table,referrals_table\nwhere users_table.id = referrals_table.referredby_id\ngroup by referrals_table.referredby_id",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

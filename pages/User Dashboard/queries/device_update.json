@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE device_table\n  SET macid = {{macid.text}}\n  WHERE id = {{ device.selectedRow.id }};\n\t\nUPDATE metrics\n\tSET deviceidentifier = \"{{oldmacid.text}}\"\"_old\"\n \tWHERE deviceidentifier = \"{{oldmacid.text}}\";\n\t\nCOMMIT;",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

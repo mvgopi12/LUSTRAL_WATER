@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE users_table\n  SET name = {{Input6.text}},\n\tphonenumber = {{Input7.text}},\n\taddress = {{Input8.text}},\n\tvalidation = {{Input9.text}},\n\tstatus = {{Input10.text}}\n  WHERE id = {{ Table1.selectedRow.id }};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

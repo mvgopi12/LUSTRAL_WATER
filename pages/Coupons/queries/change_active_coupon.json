@@ -19,6 +19,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE coupons_table\n  SET active = {{JSObject1.ChangeStatus(UsageCoupon_table.selectedRow.active)}}\n  WHERE code = {{UsageCoupon_table.selectedRow.code}};",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

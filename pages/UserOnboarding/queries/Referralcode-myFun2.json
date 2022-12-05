@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  while (true) {\n    var code = Referralcode.generatecode();\n    await uniqueCode.run(code);\n    if (uniqueCode.data.length == 0) {\n      break;\n    }\n  }\n  return code;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

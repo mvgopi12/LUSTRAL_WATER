@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async () => {\n  if (newMacid_input.text != \"\") {\n    await searchMac_query.run();\n    if (searchMac_query.data[0].recordsFound > 0) {\n      await update_mac_query.run();\n      if (update_mac_query.data[0].affectedRows > 0) {\n        showModal(\"updationSuccess_modal\");\n      } else {\n        showModal(\"failure_modal\");\n      }\n    } else {\n      showModal(\"deviceNotFound_Modal\");\n    }\n    return;\n  } else {\n    showModal(\"nullValuesError_modal\");\n    return;\n  }\n  showModal(\"failure_modal\");\n  return;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
