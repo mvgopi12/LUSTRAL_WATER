@@ -35,6 +35,10 @@
     {
       "id": "Inactive Devices",
       "isDefault": false
+    },
+    {
+      "id": "Device Monitoring on Date",
+      "isDefault": false
     }
   ],
   "viewMode": false,
