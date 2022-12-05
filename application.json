@@ -39,6 +39,10 @@
     {
       "id": "Device Monitoring on Date",
       "isDefault": false
+    },
+    {
+      "id": "Device Monitoring on Date Copy",
+      "isDefault": false
     }
   ],
   "viewMode": false,
