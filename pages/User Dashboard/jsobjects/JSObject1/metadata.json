@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun3: () => {\n\t\tif(findMacId.data.length == 0){\n\t\t\tshowModal('NotFound_Modal');\n\t\t}\n\t},\n\tmyFun2: () => {\n\t\t//use async-await or promises\n\t\tif(updateMacId.data[0].affectedRows == 0){\n\t\t\tshowModal('NotFound_Modal');\n\t\t}\n\t\telse if(updateMacId.data[0].affectedRows == 1)\n\t\t{\n\t\t\tshowModal('Device_Success');\n\t\t}\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",

@@ -6,7 +6,6 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tvaild_till: () => {\n\t\t\tconst start_Date_format = new Date(subs_start_input.formattedDate);\n\t\tlet subs_end_date = new Date(31536000000 + start_Date_format.getTime());\n\t\treturn subs_end_date.toISOString();\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",

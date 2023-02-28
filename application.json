@@ -52,6 +52,7 @@
   "publishedAppLayout": {
     "type": "FLUID"
   },
+  "publishedCustomJSLibs": [],
   "applicationVersion": 2,
   "isManualUpdate": false,
   "deleted": false

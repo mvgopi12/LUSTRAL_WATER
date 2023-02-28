@@ -1,12 +1,11 @@
 {
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "Inactive Devices",
+    "pageId": "Coupons",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t},\n\tmyFun2: async () => {\n\t\t\n\t}\n}",
     "variables": [
       {
         "name": "myVar1",
@@ -19,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Inactive Devices_JSObject1",
+  "id": "Coupons_JSObject1",
   "deleted": false,
-  "gitSyncId": "60cd8f14165e2a21a2661090_62905c257901344ba8d31ec3"
+  "gitSyncId": "60cd8f14165e2a21a2661090_627511f85984be5f5784c570"
 }
