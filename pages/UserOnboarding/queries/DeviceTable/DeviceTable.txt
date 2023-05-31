@@ -1,0 +1,2 @@
+select users_table.id,users_table.phonenumber,device_table.macid from users_table,device_table
+where users_table.id = device_table.user

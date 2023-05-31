@@ -1,0 +1,1 @@
+SELECT * FROM node.metrics where id > 51400 order by id desc

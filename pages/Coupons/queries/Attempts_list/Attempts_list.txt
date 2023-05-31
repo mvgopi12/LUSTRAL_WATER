@@ -1,0 +1,4 @@
+select coupons_table.code,coupons_table.active,coupons_table.totalFrequency, COUNT(coupons_usage.couponId) as couponAttemptsMade from 
+coupons_table
+left join coupons_usage on coupons_usage.couponId = coupons_table.id
+GROUP BY coupons_table.code;

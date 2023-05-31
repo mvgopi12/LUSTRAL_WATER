@@ -1,0 +1,7 @@
+UPDATE users_table
+  SET name = {{Input6.text}},
+	phonenumber = {{Input7.text}},
+	address = {{Input8.text}},
+	validation = {{Input9.text}},
+	status = {{Input10.text}}
+  WHERE id = {{ Table1.selectedRow.id }};

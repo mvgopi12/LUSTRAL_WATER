@@ -1,0 +1,3 @@
+SELECT * FROM metrics 
+where deviceidentifier = {{oldmacId_input.text}} 
+LIMIT 1;

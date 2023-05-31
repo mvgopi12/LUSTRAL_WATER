@@ -1,0 +1,1 @@
+SELECT * FROM node.metrics where deviceidentifier={{Input4.text}} order by id desc limit 100

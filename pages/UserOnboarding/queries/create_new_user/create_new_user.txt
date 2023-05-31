@@ -1,0 +1,3 @@
+insert into users_table(phonenumber,name,address,referralcode,createdAt,updatedAt)
+Select * from (select {{createUser_phonenumber.text}},{{createUser_Name.text}},{{createUser_Address.text}},{{Referralcode.generatecode()}},{{installation_date.formattedDate}},{{installation_date.formattedDate}} as temp_values) as temp_user
+where not EXISTS (SELECT phonenumber FROM users_table WHERE phonenumber = {{createUser_phonenumber.text}});

@@ -1,0 +1,1 @@
+SELECT * FROM node.metrics where deviceidentifier={{Input1.text}} and createdAt >{{DatePicker1.selectedDate}} and createdAt < DATE_ADD({{DatePicker1.selectedDate}},INTERVAL 1 DAY) order by id desc limit 100

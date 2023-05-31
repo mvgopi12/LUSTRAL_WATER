@@ -1,0 +1,20 @@
+{
+    "name" : {{Name.text}},
+    "contact" : {{phone_paylink.text}},
+    "email"  : "{{email.text}}",
+    "billing_address" : {
+        "line1" : {{billingAdd.text}},
+        "city"  : {{billingCity.text}},
+        "zipcode" : {{billingPincode.text}},
+        "state" : {{billingState.text}},
+        "country" : "india"
+    },
+    "shipping_address" : {
+        "line1" : {{shippingAdd.text}},
+        "city"  : {{shippingCity.text}},
+        "zipcode" : {{shippingPincode.text}},
+        "state" : {{shippingState.text}},
+        "country" : "india"
+    },
+    "item_id" : "item_IqHb1gDPFqdxqq"
+}

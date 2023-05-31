@@ -1,0 +1,9 @@
+UPDATE device_table
+  SET macid = {{macid.text}}
+  WHERE id = {{ device.selectedRow.id }};
+	
+UPDATE metrics
+	SET deviceidentifier = "{{oldmacid.text}}""_old"
+ 	WHERE deviceidentifier = "{{oldmacid.text}}";
+	
+COMMIT;

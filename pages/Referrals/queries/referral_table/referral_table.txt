@@ -1,0 +1,1 @@
+Select id,name as Name,userid,referredby_id,referral_status,referral_code,referral_description from referrals_table

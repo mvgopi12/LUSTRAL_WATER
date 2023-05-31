@@ -1,0 +1,1 @@
+SELECT * FROM subscription_table where userid = {{subs_userId_input.text}};

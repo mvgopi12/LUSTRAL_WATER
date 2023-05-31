@@ -1,0 +1,19 @@
+INSERT INTO coupons_table
+  (code, minProductProce, discount,price,discount_type, max_limit,valid_from,valid_till,active,totalFrequency,userFrequency,customOffer,createdAt,updatedAt)
+VALUES
+  (
+    {{ Code_input.text }},
+    {{ minProductPrice_input.text }},
+    {{ discount_percentage_input.text }},
+		{{price_input.text}},
+		{{discount_type_input.text}},
+		{{max_discount_input.text}},
+		{{valid_from_input.formattedDate}},
+		{{valid_till_input.formattedDate}},
+		{{active_input.text}},
+		{{total_coupons_input.text}},
+		{{userFrequency_input.text}},
+		{{customOffer_input.text}},
+		NOW(),
+		NOW()
+  );

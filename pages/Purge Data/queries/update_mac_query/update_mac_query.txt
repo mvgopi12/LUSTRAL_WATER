@@ -1,0 +1,4 @@
+UPDATE metrics
+  SET deviceidentifier = {{newMacid_input.text}}
+  WHERE deviceidentifier = {{oldmacId_input.text}}
+	limit {{searchMac_query.data[0].recordsFound}}

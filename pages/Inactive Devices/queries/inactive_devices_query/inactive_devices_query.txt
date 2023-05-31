@@ -1,0 +1,6 @@
+SELECT deviceidentifier, MAX(createdAt) AS latestUpdate
+from metrics 
+GROUP BY deviceidentifier
+HAVING MAX(createdAt) >= DATE_SUB(NOW(),INTERVAL 1 DAY)
+ORDER BY latestUpdate DESC;
+

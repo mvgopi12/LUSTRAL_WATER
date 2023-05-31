@@ -1,0 +1,4 @@
+select users_table.name as Name,referrals_table.referredby_id as User_Id,count(referrals_table.userid) as total_referrals 
+from users_table,referrals_table
+where users_table.id = referrals_table.referredby_id
+group by referrals_table.referredby_id

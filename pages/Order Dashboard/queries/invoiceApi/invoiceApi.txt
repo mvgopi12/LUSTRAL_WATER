@@ -1,0 +1,40 @@
+{
+    "type" : "invoice",
+    "description"  : "LustralWater purifier",
+    "partial_payment" : true,
+    "customer" : {
+        "name" : {{Name.text}},
+        "email" : {{email.text}},
+        "contact" : {{phone_paylink.text}},
+        "billing_address" : {
+            "line1" : {{billingAdd.text}},
+            "zipcode" : {{billingPincode.text}},
+            "city" : {{billingCity.text}},
+            "state" : {{billing_state_drop_input.selectedOptionValue}},
+            "country" : "india",
+		"contact" : {{phContact.text}}
+        },
+        "shipping_address" : {
+            "line1" : {{shippingAdd.text}},
+            "zipcode" : {{shippingPincode.text}},
+            "city" : {{shippingCity.text}},
+            "state" : {{shipping_state_drop_input.selectedOptionValue}},
+            "country" : "india",
+ "contact" : {{phContact.text}}
+        }
+    },
+    "line_items" : [
+        {
+            "name" : "lustral water filter",
+            "description" : "model Rs.7700",
+            "amount" : 770000,
+            "currency" : "INR",
+            "quantity" : 1
+        }
+    ],
+		"notes" : {
+		"installation_date" : {{installationDate.selectedDate}},
+			"phoneNumberApp" : {{phNumApp.text}}
+		},
+"description" : {{description_input.text}}
+}

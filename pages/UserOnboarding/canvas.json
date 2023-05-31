@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 79,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -2141,6 +2141,11 @@
                       "widgetName": "subs_start_input",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onDateSelected"
+                        }
+                      ],
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8.svg",
                       "topRow": 20,
@@ -2166,7 +2171,7 @@
                       "labelPosition": "Left",
                       "isDisabled": false,
                       "key": "sevvx7o49v",
-                      "onDateSelected": "{{validDate.vaild_till()}}",
+                      "onDateSelected": "{{validDate.nextYear()}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "rightColumn": 44,
@@ -2406,7 +2411,7 @@
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{validDate.vaild_till()}}",
+                      "defaultText": "{{validDate.nextYear()}}",
                       "minDynamicHeight": 4
                     },
                     {

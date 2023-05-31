@@ -1,0 +1,2 @@
+SELECT * FROM node.metrics where ((ph < 5.5 and ph > 8) or tds > 100 or turbidity > 10 or  temperature > 35) and  createdAt > CURDATE()
+group by deviceidentifier order by id desc

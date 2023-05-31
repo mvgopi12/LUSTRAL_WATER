@@ -1,0 +1,3 @@
+UPDATE device_table
+  SET user = {{user_id_input.text}}
+  WHERE id = {{Table1.selectedRow.id}};

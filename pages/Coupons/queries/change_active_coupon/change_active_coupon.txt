@@ -1,0 +1,3 @@
+UPDATE coupons_table
+  SET active = {{JSObject1.ChangeStatus(UsageCoupon_table.selectedRow.active)}}
+  WHERE code = {{UsageCoupon_table.selectedRow.code}};

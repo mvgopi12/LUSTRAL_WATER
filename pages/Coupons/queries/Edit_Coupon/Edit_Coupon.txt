@@ -1,0 +1,14 @@
+UPDATE coupons_table
+  SET 
+	minProductProce = {{list_minproductprice_input.text}},
+	discount = {{list_discount_input.text}},
+	price = {{list_price_input.text}},
+	discount_type = {{list_discountType_input.text}},
+	max_limit = {{list_maxlimit_input.text}},
+	valid_from = {{list_validFrom_input.text}},
+	valid_till = {{list_validTill_input.text}},
+	active = {{list_active_input.text}},
+	totalFrequency = {{list_totalfrequency_input.text}},
+	userFrequency = {{list_userFrequency_input.text}},
+	updatedAt = NOW()
+  WHERE code = {{couponsList_table.selectedRow.code}};

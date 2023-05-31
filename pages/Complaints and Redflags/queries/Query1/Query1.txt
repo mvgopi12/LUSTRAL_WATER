@@ -1,0 +1,1 @@
+update node.complaint set status=2 where id='{{Table2.selectedRow.id}}'

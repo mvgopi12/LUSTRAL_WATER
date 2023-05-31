@@ -1,0 +1,3 @@
+SELECT COUNT(deviceidentifier) as recordsFound
+FROM metrics
+WHERE deviceidentifier = {{oldmacId_input.text}};

@@ -1,0 +1,2 @@
+SELECT * FROM node.metrics where id > 110000 and 
+deviceidentifier='58bf2518a798' order by id desc limit 1000

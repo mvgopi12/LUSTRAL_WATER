@@ -1,0 +1,3 @@
+select referrals_table.name,referrals_table.userid,referrals_table.referral_status,referrals_table.referredby_id,users_table.phonenumber
+from referrals_table,users_table
+where referrals_table.userid = users_table.id and referrals_table.referredby_id = {{Table1.selectedRow.userid}};

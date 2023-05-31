@@ -1,0 +1,13 @@
+INSERT INTO device_table
+  (macid,devicestatus,wifi,wifipass,lastsync,connectionstatus,user,createdAt,updatedAt)
+VALUES
+  ({{macid.text}},
+	 1,
+	 "randomwifi",
+	 "wifipassword",
+	 NOW(),
+	 "ACTIVE",
+    {{id.text}},
+	 NOW(),
+	NOW()
+  );

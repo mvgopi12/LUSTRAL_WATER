@@ -1,0 +1,1 @@
+SELECT id FROM users_table where phonenumber = {{createUser_phonenumber.text}};
