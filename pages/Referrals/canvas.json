@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1600,
+          "bottomRow": 1580,
           "containerStyle": "none",
           "snapRows": 58,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 80,
           "minHeight": 640,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -542,6 +542,7 @@
                       "labelTextSize": "0.875rem",
                       "rightColumn": 58,
                       "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "102qs3ac5p",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -551,7 +552,9 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "fontSize": "1.5rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
@@ -582,6 +585,7 @@
                       "labelTextSize": "0.875rem",
                       "rightColumn": 39,
                       "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "5rtsr2beh3",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -591,7 +595,9 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "fontSize": "1.5rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
                     }
                   ],
                   "key": "9r62mizs36",
@@ -613,6 +619,7 @@
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
               "rightColumn": 62,
+              "dynamicHeight": "FIXED",
               "widgetId": "skv8b6urhp",
               "containerStyle": "card",
               "isVisible": true,
@@ -620,7 +627,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "0px"
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "none",
@@ -837,6 +846,7 @@
                       "labelTextSize": "0.875rem",
                       "rightColumn": 53,
                       "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
                       "widgetId": "4x1s29368l",
                       "isVisible": true,
                       "fontStyle": "BOLD",
@@ -846,7 +856,9 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "0px",
-                      "fontSize": "1.5rem"
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.5rem",
+                      "minDynamicHeight": 4
                     }
                   ],
                   "key": "9r62mizs36",
@@ -868,6 +880,7 @@
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
               "rightColumn": 62,
+              "dynamicHeight": "FIXED",
               "widgetId": "7mxt5yvm1g",
               "containerStyle": "card",
               "isVisible": true,
@@ -875,7 +888,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "0px"
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -899,6 +914,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Referrals",
         "deleted": false,

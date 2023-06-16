@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 780,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 129,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 80,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -326,10 +326,18 @@
                 "type",
                 "timeslot",
                 "status",
-                "assignee",
                 "meta",
                 "createdAt",
                 "updatedAt",
+                "oldImagesUrls",
+                "newImagesUrls",
+                "assignedToEmpId",
+                "assignedToEmpName",
+                "createdBy",
+                "createdById",
+                "paymentMode",
+                "remarksByAssignee",
+                "userUploadedImages",
                 "customColumn1"
               ],
               "isVisibleDownload": true,
@@ -376,9 +384,6 @@
                   "key": "primaryColumns.timeslot.computedValue"
                 },
                 {
-                  "key": "primaryColumns.assignee.computedValue"
-                },
-                {
                   "key": "primaryColumns.meta.computedValue"
                 },
                 {
@@ -404,6 +409,33 @@
                 },
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "primaryColumns.oldImagesUrls.computedValue"
+                },
+                {
+                  "key": "primaryColumns.newImagesUrls.computedValue"
+                },
+                {
+                  "key": "primaryColumns.assignedToEmpId.computedValue"
+                },
+                {
+                  "key": "primaryColumns.assignedToEmpName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdBy.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdById.computedValue"
+                },
+                {
+                  "key": "primaryColumns.paymentMode.computedValue"
+                },
+                {
+                  "key": "primaryColumns.remarksByAssignee.computedValue"
+                },
+                {
+                  "key": "primaryColumns.userUploadedImages.computedValue"
                 }
               ],
               "leftColumn": 3,
@@ -543,25 +575,6 @@
                   "borderRadius": "0px",
                   "boxShadow": "none"
                 },
-                "assignee": {
-                  "index": 7,
-                  "width": 150,
-                  "id": "assignee",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "assignee",
-                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.assignee))}}",
-                  "borderRadius": "0px",
-                  "boxShadow": "none"
-                },
                 "meta": {
                   "index": 8,
                   "width": 150,
@@ -698,6 +711,177 @@
                   "onClick": "{{Query1.run(() => GetComplaint.run(), () => {})}}",
                   "borderRadius": "0px",
                   "boxShadow": "none"
+                },
+                "oldImagesUrls": {
+                  "index": 13,
+                  "width": 150,
+                  "id": "oldImagesUrls",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "oldImagesUrls",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.oldImagesUrls))}}",
+                  "cellBackground": ""
+                },
+                "newImagesUrls": {
+                  "index": 14,
+                  "width": 150,
+                  "id": "newImagesUrls",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "newImagesUrls",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.newImagesUrls))}}",
+                  "cellBackground": ""
+                },
+                "assignedToEmpId": {
+                  "index": 15,
+                  "width": 150,
+                  "id": "assignedToEmpId",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "assignedToEmpId",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.assignedToEmpId))}}",
+                  "cellBackground": ""
+                },
+                "assignedToEmpName": {
+                  "index": 16,
+                  "width": 150,
+                  "id": "assignedToEmpName",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "assignedToEmpName",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.assignedToEmpName))}}",
+                  "cellBackground": ""
+                },
+                "createdBy": {
+                  "index": 17,
+                  "width": 150,
+                  "id": "createdBy",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "createdBy",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.createdBy))}}",
+                  "cellBackground": ""
+                },
+                "createdById": {
+                  "index": 18,
+                  "width": 150,
+                  "id": "createdById",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "createdById",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.createdById))}}",
+                  "cellBackground": ""
+                },
+                "paymentMode": {
+                  "index": 19,
+                  "width": 150,
+                  "id": "paymentMode",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "paymentMode",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.paymentMode))}}",
+                  "cellBackground": ""
+                },
+                "remarksByAssignee": {
+                  "index": 20,
+                  "width": 150,
+                  "id": "remarksByAssignee",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "remarksByAssignee",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.remarksByAssignee))}}",
+                  "cellBackground": ""
+                },
+                "userUploadedImages": {
+                  "index": 21,
+                  "width": 150,
+                  "id": "userUploadedImages",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "userUploadedImages",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.userUploadedImages))}}",
+                  "cellBackground": ""
                 }
               },
               "delimiter": ",",

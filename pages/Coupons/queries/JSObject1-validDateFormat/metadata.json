@@ -22,7 +22,9 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [
-        {}
+        {
+          "name": "valid_date"
+        }
       ],
       "isAsync": false
     },
