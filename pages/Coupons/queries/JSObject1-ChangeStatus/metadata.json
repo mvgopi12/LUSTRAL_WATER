@@ -22,7 +22,9 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [
-        {}
+        {
+          "name": "active"
+        }
       ],
       "isAsync": false
     },

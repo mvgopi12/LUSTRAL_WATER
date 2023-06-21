@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1600,
+          "bottomRow": 1700,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 79,
+          "version": 80,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -27,20 +27,21 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "computedvolume",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 94,
-              "bottomRow": 127,
+              "topRow": 96,
+              "bottomRow": 129,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "ocnf9mgtz7": {
                   "seriesName": "",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.computedvolume } })}}"
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.computedvolume } })}}",
+                  "color": "#675eaa"
                 },
                 "08x1qdsohx": {
                   "seriesName": "",
@@ -60,7 +61,7 @@
                   "key": "fontFamily"
                 }
               ],
-              "leftColumn": 27,
+              "leftColumn": 35,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -88,7 +89,7 @@
               },
               "key": "ki4vdgjijv",
               "labelTextSize": "0.875rem",
-              "rightColumn": 51,
+              "rightColumn": 63,
               "widgetId": "n19qcr84fr",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -98,26 +99,29 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> computedvolume",
-              "borderRadius": "0.375rem",
+              "originalTopRow": 94,
+              "chartName": "Computedvolume",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 127,
               "chartType": "LINE_CHART"
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Chart2Copy4",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 94,
-              "bottomRow": 126,
+              "topRow": 96,
+              "bottomRow": 128,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "erxa6imynl": {
                   "seriesName": "Sales",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.waterconsumption } })}}"
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.waterconsumption } })}}",
+                  "color": "#675eaa"
                 }
               },
               "parentColumnSpace": 17.9375,
@@ -162,7 +166,7 @@
               },
               "key": "1i6aj066b9",
               "labelTextSize": "0.875rem",
-              "rightColumn": 25,
+              "rightColumn": 30,
               "widgetId": "q8e6bc36pk",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -172,26 +176,29 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> Volume",
-              "borderRadius": "0px",
+              "originalTopRow": 94,
+              "chartName": "Volume",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 126,
               "chartType": "COLUMN_CHART"
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Chart1CopyCopy",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 61,
-              "bottomRow": 93,
+              "topRow": 62,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "ocnf9mgtz7": {
-                  "seriesName": "tds",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.temperature } })}}"
+                  "seriesName": "Temperature",
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.temperature } })}}",
+                  "color": "#675eaa"
                 },
                 "08x1qdsohx": {
                   "seriesName": "",
@@ -211,7 +218,7 @@
                   "key": "fontFamily"
                 }
               ],
-              "leftColumn": 27,
+              "leftColumn": 35,
               "customFusionChartConfig": {
                 "type": "column2d",
                 "dataSource": {
@@ -239,7 +246,7 @@
               },
               "key": "ki4vdgjijv",
               "labelTextSize": "0.875rem",
-              "rightColumn": 51,
+              "rightColumn": 63,
               "widgetId": "u79z5f9tcx",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -249,26 +256,29 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> temperature Data",
-              "borderRadius": "0px",
+              "originalTopRow": 60,
+              "chartName": "Temperature Data",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 92,
               "chartType": "LINE_CHART"
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Chart1Copy",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 60,
-              "bottomRow": 92,
+              "topRow": 62,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "ocnf9mgtz7": {
-                  "seriesName": "tds",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.ph } })}}"
+                  "seriesName": "pH",
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.ph } })}}",
+                  "color": "#675eaa"
                 },
                 "08x1qdsohx": {
                   "seriesName": "",
@@ -316,7 +326,7 @@
               },
               "key": "ki4vdgjijv",
               "labelTextSize": "0.875rem",
-              "rightColumn": 25,
+              "rightColumn": 30,
               "widgetId": "j0is5d2szi",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -326,9 +336,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> pH Data",
-              "borderRadius": "0px",
+              "originalTopRow": 60,
+              "chartName": "pH Data",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 92,
               "chartType": "LINE_CHART"
             },
             {
@@ -356,8 +368,8 @@
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
-              "topRow": 132,
-              "bottomRow": 160,
+              "topRow": 134,
+              "bottomRow": 170,
               "parentRowSpace": 10,
               "isSortable": true,
               "type": "TABLE_WIDGET",
@@ -775,8 +787,10 @@
                   "boxShadow": "none"
                 }
               },
+              "originalTopRow": 132,
               "borderRadius": "0px",
               "isVisiblePagination": true,
+              "originalBottomRow": 168,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
                 "task": 245,
@@ -786,26 +800,29 @@
               }
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Chart1",
               "allowScroll": false,
+              "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 27,
-              "bottomRow": 59,
+              "topRow": 28,
+              "bottomRow": 60,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "ocnf9mgtz7": {
                   "seriesName": "tds",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.tds } })}}"
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.tds } })}}",
+                  "color": "#675eaa"
                 },
                 "08x1qdsohx": {
                   "seriesName": "",
                   "data": "[{\"x\":\"label\",\"y\":10}]"
                 }
               },
+              "animateLoading": true,
               "dynamicTriggerPathList": [],
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "dynamicBindingPathList": [
@@ -847,7 +864,7 @@
               },
               "key": "ki4vdgjijv",
               "labelTextSize": "0.875rem",
-              "rightColumn": 25,
+              "rightColumn": 30,
               "widgetId": "snexumlz5l",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -857,32 +874,37 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> tds Data",
-              "borderRadius": "0px",
+              "originalTopRow": 26,
+              "chartName": "TDS Data",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 58,
               "chartType": "LINE_CHART"
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Chart2",
               "allowScroll": false,
+              "dynamicPropertyPathList": [],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31e.svg",
-              "topRow": 27,
-              "bottomRow": 59,
+              "topRow": 28,
+              "bottomRow": 60,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "erxa6imynl": {
                   "seriesName": "Sales",
-                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.turbidity } })}}"
+                  "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.turbidity } })}}",
+                  "color": "#675eaa"
                 }
               },
+              "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "leftColumn": 27,
+              "leftColumn": 35,
               "dynamicBindingPathList": [
                 {
                   "key": "chartData.erxa6imynl.data"
@@ -921,7 +943,7 @@
               },
               "key": "1i6aj066b9",
               "labelTextSize": "0.875rem",
-              "rightColumn": 51,
+              "rightColumn": 63,
               "widgetId": "uzkhrdazt0",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
@@ -931,9 +953,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "chartName": "Device 2 <> turbidity",
-              "borderRadius": "0px",
+              "originalTopRow": 26,
+              "chartName": "Turbidity",
+              "borderRadius": "1.5rem",
               "xAxisName": "Product Line",
+              "originalBottomRow": 58,
               "chartType": "COLUMN_CHART"
             },
             {
@@ -941,8 +965,8 @@
               "widgetName": "Text5",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 10,
-              "bottomRow": 14,
+              "topRow": 17,
+              "bottomRow": 21,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -950,14 +974,14 @@
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 8,
+              "fontFamily": "Montserrat",
+              "leftColumn": 15,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
-              "text": "Device ID",
+              "text": "Device ID :",
               "key": "n4nb7i8l65",
               "labelTextSize": "0.875rem",
-              "rightColumn": 15,
+              "rightColumn": 25,
               "textAlign": "LEFT",
               "dynamicHeight": "FIXED",
               "widgetId": "5eq9zs4slk",
@@ -968,60 +992,22 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 15,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 19,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
             {
-              "boxShadow": "none",
-              "widgetName": "Input4",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595.svg",
-              "topRow": 10,
-              "bottomRow": 14,
-              "parentRowSpace": 10,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 12.5625,
-              "resetOnSubmit": true,
-              "leftColumn": 18,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "700tqjyse9",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 38,
-              "widgetId": "ykynfpyvpx",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "",
-              "allowCurrencyChange": false,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "iconAlign": "left",
-              "defaultText": ""
-            },
-            {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "widgetName": "Button1",
               "onClick": "{{device2.run(() => DeviceDetail.run(), () => {})}}",
-              "buttonColor": "#03B365",
+              "buttonColor": "#2563eb",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca02633.svg",
-              "topRow": 10,
-              "bottomRow": 14,
+              "topRow": 17,
+              "bottomRow": 21,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -1032,13 +1018,13 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 40,
+              "leftColumn": 45,
               "dynamicBindingPathList": [],
               "text": "Submit",
               "isDisabled": false,
               "key": "izgji2f09k",
               "labelTextSize": "0.875rem",
-              "rightColumn": 56,
+              "rightColumn": 54,
               "isDefaultClickDisabled": true,
               "widgetId": "5rx33xc9yi",
               "isVisible": true,
@@ -1047,9 +1033,132 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "0px",
+              "originalTopRow": 15,
+              "borderRadius": "0.375rem",
+              "originalBottomRow": 19,
               "buttonVariant": "PRIMARY",
+              "iconAlign": "left",
               "placement": "CENTER"
+            },
+            {
+              "mobileBottomRow": 9,
+              "widgetName": "Text6",
+              "displayName": "Text",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 1,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 31,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "System Default",
+              "parentColumnSpace": 10.078125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Device Monitoring",
+              "key": "72mowoh6up",
+              "isDeprecated": false,
+              "rightColumn": 54,
+              "textAlign": "CENTER",
+              "dynamicHeight": "FIXED",
+              "widgetId": "qvcw2kt4lm",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#1e40af",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 5,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 15,
+              "maxDynamicHeight": 7,
+              "fontSize": "3rem",
+              "minDynamicHeight": 6
+            },
+            {
+              "boxShadow": "none",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.d0ce957b6c4640f8a7418ce846ee200e.svg",
+              "topRow": 17,
+              "labelWidth": 5,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "resetOnSubmit": true,
+              "leftColumn": 26,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "placeholderText": "Enter Macid",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "version": 2,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileBottomRow": 23,
+              "widgetName": "Input4",
+              "displayName": "Input",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "autoFocus": false,
+              "hideCard": false,
+              "mobileRightColumn": 45,
+              "parentColumnSpace": 10.078125,
+              "dynamicTriggerPathList": [],
+              "labelPosition": "Top",
+              "key": "wfx0aryy54",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 42,
+              "widgetId": "ce2r1fnu2s",
+              "minWidth": 450,
+              "label": "",
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 16,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 25,
+              "maxDynamicHeight": 9000,
+              "iconAlign": "left",
+              "defaultText": "",
+              "minDynamicHeight": 4
             }
           ]
         },
