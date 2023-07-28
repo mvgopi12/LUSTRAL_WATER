@@ -1,0 +1,76 @@
+{
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "widgetName": "Chart1",
+    "allowScroll": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31e.svg",
+    "topRow": 28,
+    "bottomRow": 60,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {
+        "08x1qdsohx": {
+            "data": "[{\"x\":\"label\",\"y\":10}]",
+            "seriesName": ""
+        },
+        "ocnf9mgtz7": {
+            "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.tds } })}}",
+            "color": "#675eaa",
+            "seriesName": "tds"
+        }
+    },
+    "animateLoading": true,
+    "dynamicTriggerPathList": [],
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "dynamicBindingPathList": [
+        {"key": "chartData.ocnf9mgtz7.data"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "leftColumn": 1,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "yAxisName": "Revenue($)",
+                "xAxisName": "Product Line",
+                "caption": "Sales Report",
+                "theme": "fusion"
+            }
+        }
+    },
+    "key": "ki4vdgjijv",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 30,
+    "widgetId": "snexumlz5l",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 26,
+    "chartName": "TDS Data",
+    "borderRadius": "1.5rem",
+    "xAxisName": "Product Line",
+    "originalBottomRow": 58,
+    "chartType": "LINE_CHART"
+}

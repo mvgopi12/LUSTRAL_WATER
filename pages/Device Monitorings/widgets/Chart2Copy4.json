@@ -1,0 +1,69 @@
+{
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "widgetName": "Chart2Copy4",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31e.svg",
+    "topRow": 96,
+    "bottomRow": 128,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {"erxa6imynl": {
+        "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.waterconsumption } })}}",
+        "color": "#675eaa",
+        "seriesName": "Sales"
+    }},
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [],
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "leftColumn": 1,
+    "dynamicBindingPathList": [
+        {"key": "chartData.erxa6imynl.data"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "yAxisName": "Revenue($)",
+                "xAxisName": "Product Line",
+                "caption": "Sales Report",
+                "theme": "fusion"
+            }
+        }
+    },
+    "key": "1i6aj066b9",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 30,
+    "widgetId": "q8e6bc36pk",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 94,
+    "chartName": "Volume",
+    "borderRadius": "1.5rem",
+    "xAxisName": "Product Line",
+    "originalBottomRow": 126,
+    "chartType": "COLUMN_CHART"
+}

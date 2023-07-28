@@ -1,0 +1,71 @@
+{
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "widgetName": "Chart2",
+    "allowScroll": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31e.svg",
+    "topRow": 28,
+    "bottomRow": 60,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {"erxa6imynl": {
+        "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.turbidity } })}}",
+        "color": "#675eaa",
+        "seriesName": "Sales"
+    }},
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "dynamicTriggerPathList": [],
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "leftColumn": 35,
+    "dynamicBindingPathList": [
+        {"key": "chartData.erxa6imynl.data"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"}
+    ],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "yAxisName": "Revenue($)",
+                "xAxisName": "Product Line",
+                "caption": "Sales Report",
+                "theme": "fusion"
+            }
+        }
+    },
+    "key": "1i6aj066b9",
+    "labelTextSize": "0.875rem",
+    "rightColumn": 63,
+    "widgetId": "uzkhrdazt0",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 26,
+    "chartName": "Turbidity",
+    "borderRadius": "1.5rem",
+    "xAxisName": "Product Line",
+    "originalBottomRow": 58,
+    "chartType": "COLUMN_CHART"
+}
