@@ -19,4 +19,12 @@ return currentDate.toISOString();
 		date.setDate(date.getDate() + 1)
 		return date
 	},
+	ThirdYear :()=>{
+// Print the result
+var currentDate = new Date(DatePicker1.formattedDate);
+// Add one year
+currentDate.setFullYear(currentDate.getFullYear() + 3);
+		
+return currentDate.toISOString();
+	},
 }

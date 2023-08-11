@@ -23,5 +23,26 @@ export default {
 		}else{
 			showModal("emptyValues_modal");
 		}
-	}
+	},
+	Three_subs_submit_function: async () => {
+		//use async-await or promises
+		if(Input1.text != "" && Input2.text != "" && DatePicker1.selectedDate != "" && Input5.text != "" && Input6.text != ""){
+			await findSub_T.run();
+			if(findSub_T.data.length==0){
+				await Sub_for3years.run();
+				if(Sub_for3years.data.length >0){
+					showModal("Subs_Success");
+				}else{
+					showModal("Failure_modal");
+				}
+			}else if(findSub_T.data.length >= 1){
+				showModal("Creation_User_Failure");
+			}else{
+				showModal("Failure_modal");
+			}
+		}else{
+			showModal("emptyValues_modal");
+		}
+	},
+	
 }

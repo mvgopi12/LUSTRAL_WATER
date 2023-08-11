@@ -141,6 +141,41 @@
             "renderMode": "CANVAS",
             "isLoading": false,
             "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+        },
+        {
+            "tabId": "tab3042zq2724",
+            "mobileBottomRow": 1291,
+            "widgetName": "Canvas120",
+            "displayName": "Canvas",
+            "topRow": 1,
+            "bottomRow": 1250,
+            "parentRowSpace": 1,
+            "type": "CANVAS_WIDGET",
+            "canExtend": false,
+            "hideCard": true,
+            "minHeight": 1290,
+            "mobileRightColumn": 815.625,
+            "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
+            "leftColumn": 0,
+            "dynamicBindingPathList": [],
+            "key": "rgbh7eg54l",
+            "isDeprecated": false,
+            "tabName": "Subscription for 3 years",
+            "rightColumn": 815.625,
+            "detachFromLayout": true,
+            "widgetId": "xu6aiquuf7",
+            "containerStyle": "none",
+            "minWidth": 450,
+            "isVisible": true,
+            "version": 1,
+            "parentId": "dgoacxhym9",
+            "renderMode": "CANVAS",
+            "isLoading": false,
+            "mobileTopRow": 1,
+            "responsiveBehavior": "fill",
+            "mobileLeftColumn": 0,
+            "flexLayers": []
         }
     ],
     "key": "v8tb6m5zrr",
@@ -155,7 +190,7 @@
         "tabkkkz9hl58z": {
             "widgetId": "jmvrk77i98",
             "isDuplicateLabel": false,
-            "index": 2,
+            "index": 3,
             "id": "tabkkkz9hl58z",
             "label": "Mapping Device",
             "isVisible": true
@@ -176,10 +211,18 @@
             "label": "Subscription",
             "isVisible": true
         },
+        "tab3042zq2724": {
+            "widgetId": "xu6aiquuf7",
+            "isDuplicateLabel": false,
+            "index": 2,
+            "id": "tab3042zq2724",
+            "label": "Subscription for 3 years",
+            "isVisible": true
+        },
         "tab2": {
             "widgetId": "r4wy7t9lma",
             "isDuplicateLabel": false,
-            "index": 3,
+            "index": 4,
             "label": "Map Device",
             "id": "tab2",
             "isVisible": true

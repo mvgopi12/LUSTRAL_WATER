@@ -1,0 +1,12 @@
+INSERT INTO subscription_table
+  (phonenumber,validfrom, validtill, plandetails,userid,createdAt,updatedAt)
+VALUES
+  (
+    {{ Input1.text }},
+   {{DatePicker1.selectedDate}},
+    {{Input6.text}},
+		{{Input5.text}},
+		{{Input2.text}},
+		NOW(),
+	NOW()
+  );

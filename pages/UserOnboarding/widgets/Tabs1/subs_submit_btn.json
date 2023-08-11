@@ -3,6 +3,7 @@
     "widgetName": "subs_submit_btn",
     "onClick": "{{subscription.subs_submit_function()}}",
     "buttonColor": "#03B365",
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.cca02633.svg",
     "topRow": 39,
