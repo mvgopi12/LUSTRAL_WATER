@@ -28,7 +28,7 @@
         {"key": "primaryColumns.macid.computedValue"},
         {"key": "accentColor"}
     ],
-    "leftColumn": 13,
+    "leftColumn": 3,
     "primaryColumns": {
         "macid": {
             "isCellVisible": true,
@@ -92,7 +92,7 @@
     "key": "tlqnvkdjqr",
     "derivedColumns": {},
     "labelTextSize": "0.875rem",
-    "rightColumn": 51,
+    "rightColumn": 61,
     "textSize": "0.875rem",
     "widgetId": "1g342fgge2",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

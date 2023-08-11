@@ -28,6 +28,14 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "User Dashboard_users_list",
+              "name": "users_list",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "User Dashboard_users_macids",
               "name": "users_macids",
               "confirmBeforeExecute": false,
@@ -48,14 +56,6 @@
             {
               "id": "User Dashboard_subs_list",
               "name": "subs_list",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "User Dashboard_users_list",
-              "name": "users_list",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
