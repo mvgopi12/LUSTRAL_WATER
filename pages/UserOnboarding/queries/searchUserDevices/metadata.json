@@ -41,7 +41,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-26T06:46:14Z"
   },
   "id": "UserOnboarding_searchUserDevices",
   "deleted": false,

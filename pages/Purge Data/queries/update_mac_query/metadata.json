@@ -39,7 +39,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-21T09:46:53Z"
   },
   "id": "Purge Data_update_mac_query",
   "deleted": false,

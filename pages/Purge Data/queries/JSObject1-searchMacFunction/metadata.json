@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-21T07:45:24Z"
   },
   "id": "Purge Data_JSObject1.searchMacFunction",
   "deleted": false,

@@ -41,7 +41,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-28T11:39:33Z"
   },
   "id": "UserOnboarding_create_subscription",
   "deleted": false,

@@ -41,7 +41,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-06T12:18:00Z"
   },
   "id": "Coupons_JSObject1.validDateFormat",
   "deleted": false,

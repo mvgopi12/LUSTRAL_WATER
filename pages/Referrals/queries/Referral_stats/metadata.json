@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-19T10:20:22Z"
   },
   "id": "Referrals_Referral_stats",
   "deleted": false,

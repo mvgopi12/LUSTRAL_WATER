@@ -781,6 +781,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "1j2x692e9z",
+    "enableServerSideFiltering": false,
     "tableData": "{{Api1.data}}",
     "label": "Data",
     "searchKey": "",

@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-05T12:05:00Z"
   },
   "id": "UserOnboarding_validation.myFun2",
   "deleted": false,

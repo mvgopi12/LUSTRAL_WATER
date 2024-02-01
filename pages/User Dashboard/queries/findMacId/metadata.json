@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-05T11:39:32Z"
   },
   "id": "User Dashboard_findMacId",
   "deleted": false,

@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-27T05:05:41Z"
   },
   "id": "Inactive Devices_JSObject1.myFun1",
   "deleted": false,

@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-25T12:31:21Z"
   },
   "id": "User Dashboard_JSObject1.myFun2",
   "deleted": false,

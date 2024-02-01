@@ -41,7 +41,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-25T11:56:51Z"
   },
   "id": "UserOnboarding_create_new_user",
   "deleted": false,

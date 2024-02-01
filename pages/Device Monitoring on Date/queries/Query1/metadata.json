@@ -42,7 +42,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-12-05T12:29:03Z"
   },
   "id": "Device Monitoring on Date_Query1",
   "deleted": false,

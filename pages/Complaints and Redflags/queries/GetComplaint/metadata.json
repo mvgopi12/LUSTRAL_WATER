@@ -34,7 +34,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-02T06:53:30Z"
   },
   "id": "Complaints and Redflags_GetComplaint",
   "deleted": false,

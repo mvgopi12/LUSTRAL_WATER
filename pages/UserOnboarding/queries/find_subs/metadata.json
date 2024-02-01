@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-13T18:19:42Z"
   },
   "id": "UserOnboarding_find_subs",
   "deleted": false,

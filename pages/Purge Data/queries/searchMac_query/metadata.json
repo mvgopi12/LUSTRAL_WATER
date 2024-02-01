@@ -37,7 +37,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-21T07:36:54Z"
   },
   "id": "Purge Data_searchMac_query",
   "deleted": false,

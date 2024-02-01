@@ -34,7 +34,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2021-06-19T06:32:52Z"
   },
   "id": "Device Monitorings_getMetrics",
   "deleted": false,

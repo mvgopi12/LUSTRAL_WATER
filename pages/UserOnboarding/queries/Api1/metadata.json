@@ -82,7 +82,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-08-26T11:24:09Z"
   },
   "id": "UserOnboarding_Api1",
   "deleted": false,

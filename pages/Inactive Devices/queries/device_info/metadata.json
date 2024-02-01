@@ -41,7 +41,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-27T04:53:53Z"
   },
   "id": "Inactive Devices_device_info",
   "deleted": false,

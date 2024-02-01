@@ -42,7 +42,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-12T07:26:00Z"
   },
   "id": "UserOnboarding_updateMacId",
   "deleted": false,

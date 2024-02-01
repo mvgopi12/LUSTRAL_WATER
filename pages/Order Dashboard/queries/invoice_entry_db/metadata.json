@@ -53,7 +53,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-16T05:49:07Z"
   },
   "id": "Order Dashboard_invoice_entry_db",
   "deleted": false,

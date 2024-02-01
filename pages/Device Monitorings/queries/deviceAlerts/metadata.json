@@ -34,7 +34,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2021-09-04T13:11:33Z"
   },
   "id": "Device Monitorings_deviceAlerts",
   "deleted": false,

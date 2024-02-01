@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO subscription_table\n  (phonenumber,validfrom, validtill, plandetails,userid,createdAt,updatedAt)\nVALUES\n  (\n    {{ Input1.text }},\n   {{DatePicker1.selectedDate}},\n    {{Input6.text}},\n\t\t{{Input5.text}},\n\t\t{{Input2.text}},\n\t\tNOW(),\n\tNOW()\n  );",
+      "body": "INSERT INTO subscription_table\n  (phonenumber,validfrom, validtill, plandetails,userid,createdAt,updatedAt)\nVALUES\n  (\n    {{ Input2.text }},\n   {{DatePicker1.selectedDate}},\n    {{Input6.text}},\n\t\t{{Input5.text}},\n\t\t{{Input1.text}},\n\t\tNOW(),\n\tNOW()\n  );",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,9 +36,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " Input1.text ",
+      " Input2.text ",
       "DatePicker1.selectedDate",
-      "Input2.text",
+      "Input1.text",
       "Input5.text",
       "Input6.text"
     ],

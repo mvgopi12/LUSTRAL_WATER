@@ -40,7 +40,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-19T10:04:01Z"
   },
   "id": "Referrals_findUser",
   "deleted": false,

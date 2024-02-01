@@ -42,7 +42,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-28T09:47:33Z"
   },
   "id": "UserOnboarding_remapping",
   "deleted": false,

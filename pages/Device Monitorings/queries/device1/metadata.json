@@ -30,7 +30,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2021-07-13T06:10:40Z"
   },
   "id": "Device Monitorings_device1",
   "deleted": false,

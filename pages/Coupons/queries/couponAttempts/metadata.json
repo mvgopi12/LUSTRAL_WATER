@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-07T07:28:58Z"
   },
   "id": "Coupons_couponAttempts",
   "deleted": false,

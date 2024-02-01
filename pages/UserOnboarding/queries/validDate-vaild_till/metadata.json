@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-29T09:59:20Z"
   },
   "id": "UserOnboarding_validDate.vaild_till",
   "deleted": false,

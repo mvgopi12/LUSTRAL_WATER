@@ -54,7 +54,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-22T11:14:37Z"
   },
   "id": "Order Dashboard_Api1",
   "deleted": false,

@@ -34,7 +34,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-02T06:49:00Z"
   },
   "id": "Device Monitorings_GetActiveComplaints",
   "deleted": false,

@@ -76,7 +76,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-14T12:20:55Z"
   },
   "id": "Order Dashboard_invoiceApi",
   "deleted": false,

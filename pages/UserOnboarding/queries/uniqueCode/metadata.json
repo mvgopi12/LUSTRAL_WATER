@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-05-19T06:41:53Z"
   },
   "id": "UserOnboarding_uniqueCode",
   "deleted": false,

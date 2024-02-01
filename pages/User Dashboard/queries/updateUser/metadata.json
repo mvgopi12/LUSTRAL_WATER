@@ -46,7 +46,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2022-04-18T07:17:37Z"
   },
   "id": "User Dashboard_updateUser",
   "deleted": false,
