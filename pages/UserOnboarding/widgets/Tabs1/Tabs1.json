@@ -60,7 +60,7 @@
       "rightColumn": 337.5,
       "shouldScrollContents": false,
       "tabId": "tab2",
-      "tabName": "Map Device",
+      "tabName": "Re-Mapping Device",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -211,7 +211,7 @@
       "index": 4,
       "isDuplicateLabel": false,
       "isVisible": true,
-      "label": "Map Device",
+      "label": "Re-Mapping Device",
       "widgetId": "r4wy7t9lma"
     },
     "tab3042zq2724": {
