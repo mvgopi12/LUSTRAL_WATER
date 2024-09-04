@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "60cd8f14165e2a21a2661090_628898947901344ba8d14a7d",
+  "id": "Purge Data_JSObject1",
   "unpublishedCollection": {
     "name": "JSObject1",
     "pageId": "Purge Data",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Purge Data_JSObject1",
-  "deleted": false,
-  "gitSyncId": "60cd8f14165e2a21a2661090_628898947901344ba8d14a7d"
+    ]
+  }
 }

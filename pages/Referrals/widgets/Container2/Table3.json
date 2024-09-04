@@ -1,137 +1,151 @@
 {
-    "boxShadow": "none",
-    "widgetName": "Table3",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "Name",
-        "User_Id",
-        "total_referrals"
-    ],
-    "isVisibleDownload": true,
-    "dynamicPropertyPathList": [{"key": "tableData"}],
-    "displayName": "Table",
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 6,
-    "bottomRow": 49,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "0",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 12.87109375,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "tableData"},
-        {"key": "primaryColumns.total_referrals.computedValue"},
-        {"key": "accentColor"},
-        {"key": "primaryColumns.Name.computedValue"},
-        {"key": "primaryColumns.User_Id.computedValue"}
-    ],
-    "leftColumn": 11,
-    "primaryColumns": {
-        "total_referrals": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.total_referrals))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "total_referrals",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "total_referrals",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "User_Id": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.User_Id))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "User_Id",
-            "textColor": "",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "User_Id",
-            "isDisabled": false,
-            "cellBackground": "",
-            "verticalAlignment": "CENTER"
-        },
-        "Name": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.Name))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": true,
-            "label": "Name",
-            "textColor": "",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "Name",
-            "isDisabled": false,
-            "cellBackground": "",
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "delimiter": ",",
-    "key": "idv12okjvn",
-    "derivedColumns": {},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 55,
-    "textSize": "0.875rem",
-    "widgetId": "imj9cxw945",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": true,
-    "tableData": "{{Referral_stats.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "enableClientSideSearch": true,
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "9x9l0jb2ke",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "0px",
-    "isVisiblePagination": true,
-    "verticalAlignment": "CENTER",
-    "columnSizeMap": {
-        "task": 245,
-        "step": 62,
-        "status": 75
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     }
+  },
+  "columnOrder": [
+    "Name",
+    "User_Id",
+    "total_referrals"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "0",
+  "delimiter": ",",
+  "derivedColumns": {},
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.total_referrals.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "primaryColumns.Name.computedValue"
+    },
+    {
+      "key": "primaryColumns.User_Id.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "idv12okjvn",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 11,
+  "parentColumnSpace": 12.87109375,
+  "parentId": "9x9l0jb2ke",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "Name": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.Name))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "Name",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Name",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "User_Id": {
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.User_Id))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "User_Id",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "User_Id",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "total_referrals": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{Table3.sanitizedTableData.map((currentRow) => ( currentRow.total_referrals))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "total_referrals",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "total_referrals",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 55,
+  "searchKey": "",
+  "tableData": "{{Referral_stats.data}}",
+  "textSize": "0.875rem",
+  "topRow": 6,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "imj9cxw945",
+  "widgetName": "Table3"
 }

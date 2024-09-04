@@ -1,119 +1,149 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "widgetName": "inactiveDev_table",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "deviceidentifier",
-        "latestUpdate"
-    ],
-    "isVisibleDownload": true,
-    "dynamicPropertyPathList": [{"key": "tableData"}],
-    "displayName": "Table",
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 11,
-    "bottomRow": 57,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 14.0625,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "childStylesheet.button.buttonColor"},
-        {"key": "childStylesheet.button.borderRadius"},
-        {"key": "childStylesheet.menuButton.menuColor"},
-        {"key": "childStylesheet.menuButton.borderRadius"},
-        {"key": "childStylesheet.iconButton.menuColor"},
-        {"key": "childStylesheet.iconButton.borderRadius"},
-        {"key": "tableData"},
-        {"key": "primaryColumns.deviceidentifier.computedValue"},
-        {"key": "primaryColumns.latestUpdate.computedValue"}
-    ],
-    "leftColumn": 8,
-    "primaryColumns": {
-        "deviceidentifier": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{inactiveDev_table.sanitizedTableData.map((currentRow) => ( currentRow.deviceidentifier))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": true,
-            "label": "deviceidentifier",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "deviceidentifier",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "latestUpdate": {
-            "isCellVisible": true,
-            "isDerived": false,
-            "computedValue": "{{inactiveDev_table.sanitizedTableData.map((currentRow) => ( currentRow.latestUpdate))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "latestUpdate",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "latestUpdate",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 57,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "delimiter": ",",
-    "onRowSelected": "{{device_info.run()}}",
-    "key": "ff12qenhgv",
-    "derivedColumns": {},
-    "rightColumn": 56,
-    "textSize": "0.875rem",
-    "widgetId": "iq315hshi3",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": true,
-    "tableData": "{{inactive_devices_query.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "enableClientSideSearch": true,
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "isVisiblePagination": true,
-    "verticalAlignment": "CENTER",
-    "columnSizeMap": {
-        "task": 245,
-        "step": 62,
-        "status": 75
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     }
+  },
+  "columnOrder": [
+    "deviceidentifier",
+    "latestUpdate"
+  ],
+  "columnSizeMap": {
+    "status": 75,
+    "step": 62,
+    "task": 245
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "",
+  "delimiter": ",",
+  "derivedColumns": {},
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "childStylesheet.button.buttonColor"
+    },
+    {
+      "key": "childStylesheet.button.borderRadius"
+    },
+    {
+      "key": "childStylesheet.menuButton.menuColor"
+    },
+    {
+      "key": "childStylesheet.menuButton.borderRadius"
+    },
+    {
+      "key": "childStylesheet.iconButton.menuColor"
+    },
+    {
+      "key": "childStylesheet.iconButton.borderRadius"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.deviceidentifier.computedValue"
+    },
+    {
+      "key": "primaryColumns.latestUpdate.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "ff12qenhgv",
+  "label": "Data",
+  "leftColumn": 8,
+  "onRowSelected": "{{device_info.run()}}",
+  "parentColumnSpace": 14.0625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "deviceidentifier": {
+      "columnType": "text",
+      "computedValue": "{{inactiveDev_table.sanitizedTableData.map((currentRow) => ( currentRow.deviceidentifier))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "deviceidentifier",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "deviceidentifier",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "latestUpdate": {
+      "columnType": "text",
+      "computedValue": "{{inactiveDev_table.sanitizedTableData.map((currentRow) => ( currentRow.latestUpdate))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "latestUpdate",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "latestUpdate",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 56,
+  "searchKey": "",
+  "tableData": "{{inactive_devices_query.data}}",
+  "textSize": "0.875rem",
+  "topRow": 11,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "iq315hshi3",
+  "widgetName": "inactiveDev_table"
 }

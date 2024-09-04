@@ -1,166 +1,184 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "widgetName": "Chart1CopyCopy",
-    "allowScroll": false,
-    "displayName": "Chart",
-    "iconSVG": "/static/media/icon.6adbe31e.svg",
-    "topRow": 62,
-    "bottomRow": 94,
-    "parentRowSpace": 10,
-    "type": "CHART_WIDGET",
-    "hideCard": false,
-    "chartData": {
-        "08x1qdsohx": {
-            "data": "[{\"x\":\"label\",\"y\":10}]",
-            "seriesName": ""
-        },
-        "ocnf9mgtz7": {
-            "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.temperature } })}}",
-            "color": "#675eaa",
-            "seriesName": "Temperature"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowScroll": false,
+  "borderRadius": "1.5rem",
+  "bottomRow": 94,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "chartData": {
+    "08x1qdsohx": {
+      "data": "[{\"x\":\"label\",\"y\":10}]",
+      "seriesName": ""
     },
-    "dynamicTriggerPathList": [],
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "dynamicBindingPathList": [
-        {"key": "chartData.ocnf9mgtz7.data"},
-        {"key": "accentColor"},
-        {"key": "fontFamily"}
-    ],
-    "leftColumn": 35,
-    "customFusionChartConfig": {
-        "type": "column2d",
-        "dataSource": {
-            "data": [
-                {
-                    "label": "Product1",
-                    "value": 20000
-                },
-                {
-                    "label": "Product2",
-                    "value": 22000
-                },
-                {
-                    "label": "Product3",
-                    "value": 32000
-                }
-            ],
-            "chart": {
-                "yAxisName": "Revenue($)",
-                "xAxisName": "Product Line",
-                "caption": "Sales Report",
-                "theme": "fusion"
-            }
-        }
-    },
-    "customEChartConfig": {
-        "yAxis": [{"type": "value"}],
-        "xAxis": [{"type": "category"}],
-        "legend": {
-            "top": 40,
-            "type": "scroll"
-        },
-        "grid": {
-            "top": 100,
-            "left": 15,
-            "bottom": 30,
-            "right": 15,
-            "containLabel": true
-        },
-        "series": [
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            }
+    "ocnf9mgtz7": {
+      "color": "#675eaa",
+      "data": "{{device2.data.map( (obj) =>{ return  {'x': obj.createdAt, 'y': obj.temperature } })}}",
+      "seriesName": "Temperature"
+    }
+  },
+  "chartName": "Temperature Data",
+  "chartType": "LINE_CHART",
+  "customEChartConfig": {
+    "dataset": {
+      "source": [
+        [
+          "Day",
+          "Baidu",
+          "Google",
+          "Bing"
         ],
-        "tooltip": {
-            "axisPointer": {"type": "shadow"},
-            "trigger": "axis"
-        },
-        "title": {
-            "left": "center",
-            "text": "Search Engine Usage",
-            "textStyle": {
-                "overflow": "truncate",
-                "width": 200
-            }
-        },
-        "dataset": {"source": [
-            [
-                "Day",
-                "Baidu",
-                "Google",
-                "Bing"
-            ],
-            [
-                "Mon",
-                620,
-                120,
-                60
-            ],
-            [
-                "Tue",
-                732,
-                132,
-                72
-            ],
-            [
-                "Wed",
-                701,
-                101,
-                71
-            ],
-            [
-                "Thu",
-                734,
-                134,
-                74
-            ],
-            [
-                "Fri",
-                1090,
-                290,
-                190
-            ],
-            [
-                "Sat",
-                1130,
-                230,
-                130
-            ],
-            [
-                "Sun",
-                1120,
-                220,
-                110
-            ]
-        ]}
+        [
+          "Mon",
+          620,
+          120,
+          60
+        ],
+        [
+          "Tue",
+          732,
+          132,
+          72
+        ],
+        [
+          "Wed",
+          701,
+          101,
+          71
+        ],
+        [
+          "Thu",
+          734,
+          134,
+          74
+        ],
+        [
+          "Fri",
+          1090,
+          290,
+          190
+        ],
+        [
+          "Sat",
+          1130,
+          230,
+          130
+        ],
+        [
+          "Sun",
+          1120,
+          220,
+          110
+        ]
+      ]
     },
-    "key": "ki4vdgjijv",
-    "showDataPointLabel": false,
-    "labelTextSize": "0.875rem",
-    "rightColumn": 63,
-    "widgetId": "u79z5f9tcx",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "labelOrientation": "auto",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "yAxisName": "Revenue($)",
-    "originalTopRow": 60,
-    "chartName": "Temperature Data",
-    "borderRadius": "1.5rem",
-    "xAxisName": "Product Line",
-    "originalBottomRow": 92,
-    "chartType": "LINE_CHART"
+    "grid": {
+      "bottom": 30,
+      "containLabel": true,
+      "left": 15,
+      "right": 15,
+      "top": 100
+    },
+    "legend": {
+      "top": 40,
+      "type": "scroll"
+    },
+    "series": [
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      }
+    ],
+    "title": {
+      "left": "center",
+      "text": "Search Engine Usage",
+      "textStyle": {
+        "overflow": "truncate",
+        "width": 200
+      }
+    },
+    "tooltip": {
+      "axisPointer": {
+        "type": "shadow"
+      },
+      "trigger": "axis"
+    },
+    "xAxis": [
+      {
+        "type": "category"
+      }
+    ],
+    "yAxis": [
+      {
+        "type": "value"
+      }
+    ]
+  },
+  "customFusionChartConfig": {
+    "dataSource": {
+      "chart": {
+        "caption": "Sales Report",
+        "theme": "fusion",
+        "xAxisName": "Product Line",
+        "yAxisName": "Revenue($)"
+      },
+      "data": [
+        {
+          "label": "Product1",
+          "value": 20000
+        },
+        {
+          "label": "Product2",
+          "value": 22000
+        },
+        {
+          "label": "Product3",
+          "value": 32000
+        }
+      ]
+    },
+    "type": "column2d"
+  },
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "chartData.ocnf9mgtz7.data"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.6adbe31e.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ki4vdgjijv",
+  "labelOrientation": "auto",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 35,
+  "originalBottomRow": 92,
+  "originalTopRow": 60,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "showDataPointLabel": false,
+  "topRow": 62,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "u79z5f9tcx",
+  "widgetName": "Chart1CopyCopy",
+  "xAxisName": "Product Line",
+  "yAxisName": "Revenue($)"
 }

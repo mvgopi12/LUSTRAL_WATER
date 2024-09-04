@@ -1,162 +1,178 @@
 {
-    "boxShadow": "none",
-    "widgetName": "UsageCoupon_table",
-    "defaultPageSize": 0,
-    "columnOrder": [
-        "code",
-        "active",
-        "totalFrequency",
-        "couponAttemptsMade"
-    ],
-    "isVisibleDownload": true,
-    "dynamicPropertyPathList": [{"key": "tableData"}],
-    "displayName": "Table",
-    "iconSVG": "/static/media/icon.db8a9cbd.svg",
-    "topRow": 7,
-    "bottomRow": 49,
-    "isSortable": true,
-    "parentRowSpace": 10,
-    "type": "TABLE_WIDGET",
-    "defaultSelectedRow": "",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 13.310546875,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "tableData"},
-        {"key": "primaryColumns.code.computedValue"},
-        {"key": "primaryColumns.totalFrequency.computedValue"},
-        {"key": "primaryColumns.couponAttemptsMade.computedValue"},
-        {"key": "primaryColumns.active.computedValue"},
-        {"key": "accentColor"}
-    ],
-    "leftColumn": 7,
-    "primaryColumns": {
-        "code": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.code))}}",
-            "textSize": "0.875rem",
-            "index": 0,
-            "isVisible": true,
-            "label": "code",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "code",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "active": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.active))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "active",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "active",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "couponAttemptsMade": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.couponAttemptsMade))}}",
-            "textSize": "0.875rem",
-            "index": 2,
-            "isVisible": true,
-            "label": "couponAttemptsMade",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "couponAttemptsMade",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        },
-        "totalFrequency": {
-            "isCellVisible": true,
-            "boxShadow": "none",
-            "isDerived": false,
-            "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.totalFrequency))}}",
-            "textSize": "0.875rem",
-            "index": 1,
-            "isVisible": true,
-            "label": "totalFrequency",
-            "columnType": "text",
-            "horizontalAlignment": "LEFT",
-            "borderRadius": "0px",
-            "width": 150,
-            "enableFilter": true,
-            "enableSort": true,
-            "id": "totalFrequency",
-            "isDisabled": false,
-            "verticalAlignment": "CENTER"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "delimiter": ",",
-    "key": "jnuet595hb",
-    "derivedColumns": {},
-    "labelTextSize": "0.875rem",
-    "rightColumn": 55,
-    "textSize": "0.875rem",
-    "widgetId": "w6jcnhehtt",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": true,
-    "tableData": "{{Attempts_list.data}}",
-    "isVisible": true,
-    "label": "Data",
-    "searchKey": "",
-    "enableClientSideSearch": true,
-    "version": 3,
-    "totalRecordsCount": 0,
-    "parentId": "10hpwr7myy",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "horizontalAlignment": "LEFT",
-    "isVisibleSearch": true,
-    "childStylesheet": {
-        "button": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "iconButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "menuButton": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     },
-    "borderRadius": "0px",
-    "isVisiblePagination": true,
-    "verticalAlignment": "CENTER",
-    "columnSizeMap": {
-        "task": 245,
-        "code": 158,
-        "active": 133,
-        "step": 62,
-        "couponAttemptsMade": 174,
-        "status": 75,
-        "totalFrequency": 139
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     }
+  },
+  "columnOrder": [
+    "code",
+    "active",
+    "totalFrequency",
+    "couponAttemptsMade"
+  ],
+  "columnSizeMap": {
+    "active": 133,
+    "code": 158,
+    "couponAttemptsMade": 174,
+    "status": 75,
+    "step": 62,
+    "task": 245,
+    "totalFrequency": 139
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRow": "",
+  "delimiter": ",",
+  "derivedColumns": {},
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.code.computedValue"
+    },
+    {
+      "key": "primaryColumns.totalFrequency.computedValue"
+    },
+    {
+      "key": "primaryColumns.couponAttemptsMade.computedValue"
+    },
+    {
+      "key": "primaryColumns.active.computedValue"
+    },
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": true,
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "/static/media/icon.db8a9cbd.svg",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "jnuet595hb",
+  "label": "Data",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 7,
+  "parentColumnSpace": 13.310546875,
+  "parentId": "10hpwr7myy",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "active": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.active))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "active",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "active",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "code": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.code))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "code",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "code",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "couponAttemptsMade": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.couponAttemptsMade))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "couponAttemptsMade",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "couponAttemptsMade",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "totalFrequency": {
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "columnType": "text",
+      "computedValue": "{{UsageCoupon_table.sanitizedTableData.map((currentRow) => ( currentRow.totalFrequency))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "totalFrequency",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "totalFrequency",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 55,
+  "searchKey": "",
+  "tableData": "{{Attempts_list.data}}",
+  "textSize": "0.875rem",
+  "topRow": 7,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET",
+  "version": 3,
+  "verticalAlignment": "CENTER",
+  "widgetId": "w6jcnhehtt",
+  "widgetName": "UsageCoupon_table"
 }

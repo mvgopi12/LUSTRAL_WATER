@@ -1,75 +1,93 @@
 {
-    "boxShadow": "none",
-    "widgetName": "userMappingSuccess_modal",
-    "isCanvas": true,
-    "dynamicPropertyPathList": [{"key": "onClose"}],
-    "displayName": "Modal",
-    "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
-    "searchTags": [
-        "dialog",
-        "popup",
-        "notification"
-    ],
-    "topRow": 6,
-    "bottomRow": 30,
-    "parentRowSpace": 10,
-    "type": "MODAL_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "parentColumnSpace": 7.9437255859375,
-    "dynamicTriggerPathList": [{"key": "onClose"}],
-    "leftColumn": 28,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "children": [{
-        "boxShadow": "none",
-        "widgetName": "Canvas119",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 240,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": true,
-        "hideCard": true,
-        "shouldScrollContents": false,
-        "minHeight": 240,
-        "parentColumnSpace": 1,
-        "dynamicTriggerPathList": [],
-        "leftColumn": 0,
-        "dynamicBindingPathList": [
-            {"key": "borderRadius"},
-            {"key": "accentColor"}
-        ],
-        "isDisabled": false,
-        "key": "s76ixb7ipr",
-        "isDeprecated": false,
-        "rightColumn": 190.6494140625,
-        "detachFromLayout": true,
-        "widgetId": "i8e2wc3hvf",
-        "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-        "isVisible": true,
-        "version": 1,
-        "parentId": "y5rxl5cmdf",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-    }],
-    "key": "vjvg23xhp8",
-    "height": 240,
-    "isDeprecated": false,
-    "rightColumn": 52,
-    "detachFromLayout": true,
-    "dynamicHeight": "FIXED",
-    "widgetId": "y5rxl5cmdf",
-    "canOutsideClickClose": true,
-    "canEscapeKeyClose": true,
-    "version": 2,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "onClose": "{{DeviceTable.run()}}",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "maxDynamicHeight": 9000,
-    "width": 456,
-    "minDynamicHeight": 4
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 240,
+      "boxShadow": "none",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "accentColor"
+        }
+      ],
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "s76ixb7ipr",
+      "leftColumn": 0,
+      "minHeight": 240,
+      "parentColumnSpace": 1,
+      "parentId": "y5rxl5cmdf",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 190.6494140625,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "i8e2wc3hvf",
+      "widgetName": "Canvas119"
+    }
+  ],
+  "detachFromLayout": true,
+  "displayName": "Modal",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
+  "height": 240,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "key": "vjvg23xhp8",
+  "leftColumn": 28,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onClose": "{{DeviceTable.run()}}",
+  "parentColumnSpace": 7.9437255859375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 52,
+  "searchTags": [
+    "dialog",
+    "popup",
+    "notification"
+  ],
+  "shouldScrollContents": true,
+  "topRow": 6,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "y5rxl5cmdf",
+  "widgetName": "userMappingSuccess_modal",
+  "width": 456
 }
